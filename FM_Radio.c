@@ -364,7 +364,28 @@ const unsigned char Number_Font_Spacing = 2;
 //FontName : Tahoma18x20
 //FontSize : 18 x 20
 
-const unsigned char Letter_Font[] = {
+const unsigned char Letter_Font[] = {     //letter font now includes zero to nine
+
+   0x00,0x3E,0x00,0x80,0xFF,0x00,0x80,0xE3,0x00,0xC0,0xC1,0x01,0xC0,0xC1,0x01,0xE0,0x80,0x03,0xE0,0x80,0x03,0xE0,0x80,0x03,0xE0,0x80,0x03,0xE0,0x80,0x03,
+   0xE0,0x80,0x03,0xE0,0x80,0x03,0xE0,0x80,0x03,0xE0,0x80,0x03,0xE0,0x80,0x03,0xC0,0xC1,0x01,0xC0,0xC1,0x01,0x80,0xE3,0x00,0x80,0xFF,0x00,0x00,0x3E,0x80, // Code for char num 48
+   0x00,0x18,0x00,0x00,0x1C,0x00,0x00,0x1E,0x00,0xC0,0x1F,0x00,0xC0,0x1F,0x00,0x00,0x1C,0x00,0x00,0x1C,0x00,0x00,0x1C,0x00,0x00,0x1C,0x00,0x00,0x1C,0x00,
+   0x00,0x1C,0x00,0x00,0x1C,0x00,0x00,0x1C,0x00,0x00,0x1C,0x00,0x00,0x1C,0x00,0x00,0x1C,0x00,0x00,0x1C,0x00,0x00,0x1C,0x00,0xC0,0xFF,0x01,0xC0,0xFF,0x81, // Code for char num 49
+   0x00,0x3F,0x00,0xC0,0x7F,0x00,0xC0,0xE1,0x00,0x40,0xC0,0x01,0x00,0xC0,0x01,0x00,0xC0,0x01,0x00,0xC0,0x01,0x00,0xC0,0x01,0x00,0xE0,0x00,0x00,0xE0,0x00,
+   0x00,0x70,0x00,0x00,0x78,0x00,0x00,0x3C,0x00,0x00,0x1C,0x00,0x00,0x0E,0x00,0x00,0x07,0x00,0x80,0x03,0x00,0xC0,0x01,0x00,0xC0,0xFF,0x03,0xC0,0xFF,0x83, // Code for char num 50
+   0x00,0x3F,0x00,0xC0,0xFF,0x00,0xC0,0xE1,0x01,0x40,0xC0,0x01,0x00,0xC0,0x01,0x00,0xC0,0x01,0x00,0xC0,0x01,0x00,0xF0,0x00,0x00,0x3E,0x00,0x00,0x3E,0x00,
+   0x00,0xE0,0x00,0x00,0xC0,0x00,0x00,0xC0,0x01,0x00,0xC0,0x01,0x00,0xC0,0x01,0x00,0xC0,0x01,0x20,0xE0,0x00,0xE0,0xF0,0x00,0xE0,0x7F,0x00,0x80,0x1F,0x80, // Code for char num 51
+   0x00,0x70,0x00,0x00,0x78,0x00,0x00,0x7C,0x00,0x00,0x76,0x00,0x00,0x76,0x00,0x00,0x73,0x00,0x80,0x71,0x00,0xC0,0x70,0x00,0x60,0x70,0x00,0x60,0x70,0x00,
+   0x30,0x70,0x00,0xF0,0xFF,0x03,0xF0,0xFF,0x03,0x00,0x70,0x00,0x00,0x70,0x00,0x00,0x70,0x00,0x00,0x70,0x00,0x00,0x70,0x00,0x00,0x70,0x00,0x00,0x70,0x80, // Code for char num 52
+   0xC0,0xFF,0x01,0xC0,0xFF,0x01,0xC0,0x01,0x00,0xC0,0x01,0x00,0xC0,0x01,0x00,0xC0,0x01,0x00,0xC0,0x01,0x00,0xC0,0x3F,0x00,0xC0,0x7F,0x00,0x00,0xF0,0x00,
+   0x00,0xE0,0x01,0x00,0xC0,0x01,0x00,0xC0,0x01,0x00,0xC0,0x01,0x00,0xC0,0x01,0x00,0xC0,0x01,0x20,0xE0,0x00,0xE0,0xF0,0x00,0xE0,0x7F,0x00,0x80,0x1F,0x80, // Code for char num 53
+   0x00,0xF8,0x00,0x00,0xFE,0x00,0x00,0x87,0x00,0x80,0x03,0x00,0xC0,0x01,0x00,0xC0,0x01,0x00,0xC0,0x00,0x00,0xE0,0x7C,0x00,0xE0,0xFF,0x00,0xE0,0xE1,0x01,
+   0xE0,0xC0,0x03,0xE0,0x80,0x03,0xE0,0x80,0x03,0xE0,0x80,0x03,0xE0,0x80,0x03,0xC0,0x81,0x03,0xC0,0xC1,0x01,0x80,0xE3,0x01,0x80,0xFF,0x00,0x00,0x3E,0x80, // Code for char num 54
+   0xE0,0xFF,0x01,0xE0,0xFF,0x01,0x00,0xC0,0x01,0x00,0xC0,0x01,0x00,0xE0,0x00,0x00,0xE0,0x00,0x00,0x70,0x00,0x00,0x70,0x00,0x00,0x38,0x00,0x00,0x38,0x00,
+   0x00,0x1C,0x00,0x00,0x1C,0x00,0x00,0x0E,0x00,0x00,0x0E,0x00,0x00,0x0E,0x00,0x00,0x07,0x00,0x00,0x07,0x00,0x80,0x03,0x00,0x80,0x03,0x00,0xC0,0x01,0x80, // Code for char num 55
+   0x00,0x7E,0x00,0x80,0xFF,0x00,0xC0,0xC1,0x01,0xE0,0x80,0x03,0xE0,0x80,0x03,0xE0,0x80,0x03,0xE0,0x81,0x03,0xC0,0xC3,0x01,0x80,0xFF,0x00,0x00,0x7F,0x00,
+   0xC0,0xFF,0x00,0xC0,0xE1,0x01,0xE0,0xC0,0x03,0xE0,0x80,0x03,0xE0,0x80,0x03,0xE0,0x80,0x03,0xE0,0xC1,0x03,0xC0,0xE3,0x01,0x80,0xFF,0x00,0x00,0x3E,0x80, // Code for char num 56
+   0x00,0x3E,0x00,0x80,0xFF,0x00,0xC0,0xE3,0x00,0xC0,0xC1,0x01,0xE0,0xC0,0x01,0xE0,0x80,0x03,0xE0,0x80,0x03,0xE0,0x80,0x03,0xE0,0x80,0x03,0xE0,0x81,0x03,
+   0xC0,0xC3,0x03,0x80,0xFF,0x03,0x00,0x9F,0x03,0x00,0x80,0x01,0x00,0xC0,0x01,0x00,0xC0,0x01,0x00,0xE0,0x00,0x80,0x70,0x00,0x80,0x3F,0x00,0x80,0x0F,0x80, // Code for char num 57
 
    0x80,0x07,0x00,0x80,0x07,0x00,0x80,0x07,0x00,0xC0,0x0F,0x00,0xC0,0x0F,0x00,0xC0,0x0F,0x00,0xE0,0x1C,0x00,0xE0,0x1C,0x00,0xE0,0x1C,0x00,0x70,0x38,0x00,0x70,
    0x38,0x00,0x70,0x38,0x00,0xF8,0x7F,0x00,0xF8,0x7F,0x00,0x38,0x70,0x00,0x3C,0xF0,0x00,0x1C,0xE0,0x00,0x1C,0xE0,0x00,0x1E,0xE0,0x01,0x0E,0xC0,0x01, // Code for char num 65
@@ -419,6 +440,7 @@ const unsigned char Letter_Font[] = {
    0xFC,0x7F,0x00,0xFC,0x7F,0x00,0x00,0x70,0x00,0x00,0x38,0x00,0x00,0x1C,0x00,0x00,0x1C,0x00,0x00,0x0E,0x00,0x00,0x0E,0x00,0x00,0x07,0x00,0x80,0x03,0x00,0x80,
    0x03,0x00,0xC0,0x01,0x00,0xE0,0x00,0x00,0xE0,0x00,0x00,0x70,0x00,0x00,0x70,0x00,0x00,0x38,0x00,0x00,0x1C,0x00,0x00,0xFC,0x7F,0x00,0xFC,0x7F,0x00 // Code for char num 90
   };
+  
 
 const unsigned char Letter_Font_Start = 0;
 const unsigned char Letter_Font_Length_Bytes = 60;
@@ -844,7 +866,6 @@ void Get_Pixel_Colour(unsigned int Colour){
     }
 }
 
-
 void Set_Display_Letters_SSD1963(unsigned int X_Position, unsigned int Y_Position){
 
      unsigned int Set_Start_Column = 0x00 | X_Position;
@@ -870,8 +891,7 @@ void Set_Display_Letters_SSD1963(unsigned int X_Position, unsigned int Y_Positio
      TFT_CS = 1;
 }
 
-
-void Write_Letter_A(unsigned int X_Position, unsigned int Y_Position, unsigned int Colour){
+void Write_Character_0(unsigned int X_Position, unsigned int Y_Position, unsigned int Colour){
      static unsigned char x=0;
      static unsigned char dataout = 0;
      static unsigned int i=1;
@@ -893,8 +913,7 @@ void Write_Letter_A(unsigned int X_Position, unsigned int Y_Position, unsigned i
      TFT_CS = 1;
 }
 
-
-void Write_Letter_B(unsigned int X_Position, unsigned int Y_Position, unsigned int Colour){
+void Write_Character_1(unsigned int X_Position, unsigned int Y_Position, unsigned int Colour){
      static unsigned char x=0;
      static unsigned char dataout = 0;
      static unsigned int i=1;
@@ -903,6 +922,226 @@ void Write_Letter_B(unsigned int X_Position, unsigned int Y_Position, unsigned i
      Set_Display_Letters_SSD1963(X_Position,Y_Position);
      TFT_CS = 0;
      for(jj=Letter_Font_Length_Bytes*1; jj<Letter_Font_Length_Bytes*2; jj++){
+      for(x=0; x<8; x++){
+          dataout = Letter_Font[jj] &i;
+        if(dataout){
+          Write_Data_SSD1963(Pixel);
+         }else  {Write_Data_SSD1963(Background_Colour);  }
+          i=i<<1;
+        if (i>128){
+              i=1;}
+       }
+     }
+     TFT_CS = 1;
+}
+
+void Write_Character_2(unsigned int X_Position, unsigned int Y_Position, unsigned int Colour){
+     static unsigned char x=0;
+     static unsigned char dataout = 0;
+     static unsigned int i=1;
+     static unsigned int jj=0;
+     Get_Pixel_Colour(Colour);
+     Set_Display_Letters_SSD1963(X_Position,Y_Position);
+     TFT_CS = 0;
+     for(jj=Letter_Font_Length_Bytes*2; jj<Letter_Font_Length_Bytes*3; jj++){
+      for(x=0; x<8; x++){
+          dataout = Letter_Font[jj] &i;
+        if(dataout){
+          Write_Data_SSD1963(Pixel);
+         }else  {Write_Data_SSD1963(Background_Colour);  }
+          i=i<<1;
+        if (i>128){
+              i=1;}
+       }
+     }
+     TFT_CS = 1;
+}
+
+void Write_Character_3(unsigned int X_Position, unsigned int Y_Position, unsigned int Colour){
+     static unsigned char x=0;
+     static unsigned char dataout = 0;
+     static unsigned int i=1;
+     static unsigned int jj=0;
+     Get_Pixel_Colour(Colour);
+     Set_Display_Letters_SSD1963(X_Position,Y_Position);
+     TFT_CS = 0;
+     for(jj=Letter_Font_Length_Bytes*3; jj<Letter_Font_Length_Bytes*4; jj++){
+      for(x=0; x<8; x++){
+          dataout = Letter_Font[jj] &i;
+        if(dataout){
+          Write_Data_SSD1963(Pixel);
+         }else  {Write_Data_SSD1963(Background_Colour);  }
+          i=i<<1;
+        if (i>128){
+              i=1;}
+       }
+     }
+     TFT_CS = 1;
+}
+
+void Write_Character_4(unsigned int X_Position, unsigned int Y_Position, unsigned int Colour){
+     static unsigned char x=0;
+     static unsigned char dataout = 0;
+     static unsigned int i=1;
+     static unsigned int jj=0;
+     Get_Pixel_Colour(Colour);
+     Set_Display_Letters_SSD1963(X_Position,Y_Position);
+     TFT_CS = 0;
+     for(jj=Letter_Font_Length_Bytes*4; jj<Letter_Font_Length_Bytes*5; jj++){
+      for(x=0; x<8; x++){
+          dataout = Letter_Font[jj] &i;
+        if(dataout){
+          Write_Data_SSD1963(Pixel);
+         }else  {Write_Data_SSD1963(Background_Colour);  }
+          i=i<<1;
+        if (i>128){
+              i=1;}
+       }
+     }
+     TFT_CS = 1;
+}
+
+void Write_Character_5(unsigned int X_Position, unsigned int Y_Position, unsigned int Colour){
+     static unsigned char x=0;
+     static unsigned char dataout = 0;
+     static unsigned int i=1;
+     static unsigned int jj=0;
+     Get_Pixel_Colour(Colour);
+     Set_Display_Letters_SSD1963(X_Position,Y_Position);
+     TFT_CS = 0;
+     for(jj=Letter_Font_Length_Bytes*5; jj<Letter_Font_Length_Bytes*6; jj++){
+      for(x=0; x<8; x++){
+          dataout = Letter_Font[jj] &i;
+        if(dataout){
+          Write_Data_SSD1963(Pixel);
+         }else  {Write_Data_SSD1963(Background_Colour);  }
+          i=i<<1;
+        if (i>128){
+              i=1;}
+       }
+     }
+     TFT_CS = 1;
+}
+
+void Write_Character_6(unsigned int X_Position, unsigned int Y_Position, unsigned int Colour){
+     static unsigned char x=0;
+     static unsigned char dataout = 0;
+     static unsigned int i=1;
+     static unsigned int jj=0;
+     Get_Pixel_Colour(Colour);
+     Set_Display_Letters_SSD1963(X_Position,Y_Position);
+     TFT_CS = 0;
+     for(jj=Letter_Font_Length_Bytes*6; jj<Letter_Font_Length_Bytes*7; jj++){
+      for(x=0; x<8; x++){
+          dataout = Letter_Font[jj] &i;
+        if(dataout){
+          Write_Data_SSD1963(Pixel);
+         }else  {Write_Data_SSD1963(Background_Colour);  }
+          i=i<<1;
+        if (i>128){
+              i=1;}
+       }
+     }
+     TFT_CS = 1;
+}
+
+void Write_Character_7(unsigned int X_Position, unsigned int Y_Position, unsigned int Colour){
+     static unsigned char x=0;
+     static unsigned char dataout = 0;
+     static unsigned int i=1;
+     static unsigned int jj=0;
+     Get_Pixel_Colour(Colour);
+     Set_Display_Letters_SSD1963(X_Position,Y_Position);
+     TFT_CS = 0;
+     for(jj=Letter_Font_Length_Bytes*7; jj<Letter_Font_Length_Bytes*8; jj++){
+      for(x=0; x<8; x++){
+          dataout = Letter_Font[jj] &i;
+        if(dataout){
+          Write_Data_SSD1963(Pixel);
+         }else  {Write_Data_SSD1963(Background_Colour);  }
+          i=i<<1;
+        if (i>128){
+              i=1;}
+       }
+     }
+     TFT_CS = 1;
+}
+
+void Write_Character_8(unsigned int X_Position, unsigned int Y_Position, unsigned int Colour){
+     static unsigned char x=0;
+     static unsigned char dataout = 0;
+     static unsigned int i=1;
+     static unsigned int jj=0;
+     Get_Pixel_Colour(Colour);
+     Set_Display_Letters_SSD1963(X_Position,Y_Position);
+     TFT_CS = 0;
+     for(jj=Letter_Font_Length_Bytes*8; jj<Letter_Font_Length_Bytes*9; jj++){
+      for(x=0; x<8; x++){
+          dataout = Letter_Font[jj] &i;
+        if(dataout){
+          Write_Data_SSD1963(Pixel);
+         }else  {Write_Data_SSD1963(Background_Colour);  }
+          i=i<<1;
+        if (i>128){
+              i=1;}
+       }
+     }
+     TFT_CS = 1;
+}
+
+void Write_Character_9(unsigned int X_Position, unsigned int Y_Position, unsigned int Colour){
+     static unsigned char x=0;
+     static unsigned char dataout = 0;
+     static unsigned int i=1;
+     static unsigned int jj=0;
+     Get_Pixel_Colour(Colour);
+     Set_Display_Letters_SSD1963(X_Position,Y_Position);
+     TFT_CS = 0;
+     for(jj=Letter_Font_Length_Bytes*9; jj<Letter_Font_Length_Bytes*10; jj++){
+      for(x=0; x<8; x++){
+          dataout = Letter_Font[jj] &i;
+        if(dataout){
+          Write_Data_SSD1963(Pixel);
+         }else  {Write_Data_SSD1963(Background_Colour);  }
+          i=i<<1;
+        if (i>128){
+              i=1;}
+       }
+     }
+     TFT_CS = 1;
+}
+
+void Write_Character_A(unsigned int X_Position, unsigned int Y_Position, unsigned int Colour){
+     static unsigned char x=0;
+     static unsigned char dataout = 0;
+     static unsigned int i=1;
+     static unsigned int jj=0;
+     Get_Pixel_Colour(Colour);
+     Set_Display_Letters_SSD1963(X_Position,Y_Position);
+     TFT_CS = 0;
+     for(jj=Letter_Font_Length_Bytes*10; jj<Letter_Font_Length_Bytes*11; jj++){
+      for(x=0; x<8; x++){
+          dataout = Letter_Font[jj] &i;
+        if(dataout){
+          Write_Data_SSD1963(Pixel);
+         }else  {Write_Data_SSD1963(Background_Colour);  }
+          i=i<<1;
+        if (i>128){
+              i=1;}
+       }
+     }
+     TFT_CS = 1;
+}
+
+void Write_Character_B(unsigned int X_Position, unsigned int Y_Position, unsigned int Colour){
+     static unsigned char x=0;
+     static unsigned char dataout = 0;
+     static unsigned int i=1;
+     static unsigned int jj=0;
+     Get_Pixel_Colour(Colour);
+     Set_Display_Letters_SSD1963(X_Position,Y_Position);
+     TFT_CS = 0;
+     for(jj=Letter_Font_Length_Bytes*11; jj<Letter_Font_Length_Bytes*12; jj++){
       for(x=0; x<8; x++){
           dataout = Letter_Font[jj] &i;
         if(dataout){
@@ -916,237 +1155,7 @@ void Write_Letter_B(unsigned int X_Position, unsigned int Y_Position, unsigned i
      TFT_CS = 1;
 }
 
-
-void Write_Letter_C(unsigned int X_Position, unsigned int Y_Position, unsigned int Colour){
-     static unsigned char x=0;
-     static unsigned char dataout = 0;
-     static unsigned int i=1;
-     static unsigned int jj=0;
-     Get_Pixel_Colour(Colour);
-     Set_Display_Letters_SSD1963(X_Position,Y_Position);
-     TFT_CS = 0;
-     for(jj=Letter_Font_Length_Bytes*2; jj<Letter_Font_Length_Bytes*3; jj++){
-      for(x=0; x<8; x++){
-          dataout = Letter_Font[jj] &i;
-        if(dataout){
-           Write_Data_SSD1963(Pixel);
-         }else  {Write_Data_SSD1963(Background_Colour);}
-          i=i<<1;
-        if (i>128){
-              i=1;}
-       }
-     }
-     TFT_CS = 1;
-}
-
-
-void Write_Letter_D(unsigned int X_Position, unsigned int Y_Position, unsigned int Colour){
-     static unsigned char x=0;
-     static unsigned char dataout = 0;
-     static unsigned int i=1;
-     static unsigned int jj=0;
-     Get_Pixel_Colour(Colour);
-     Set_Display_Letters_SSD1963(X_Position,Y_Position);
-     TFT_CS = 0;
-     for(jj=Letter_Font_Length_Bytes*3; jj<Letter_Font_Length_Bytes*4; jj++){
-      for(x=0; x<8; x++){
-          dataout = Letter_Font[jj] &i;
-        if(dataout){
-           Write_Data_SSD1963(Pixel);
-         }else  {Write_Data_SSD1963(Background_Colour);}
-          i=i<<1;
-        if (i>128){
-              i=1;}
-       }
-     }
-     TFT_CS = 1;
-}
-
-
-void Write_Letter_E(unsigned int X_Position, unsigned int Y_Position, unsigned int Colour){
-     static unsigned char x=0;
-     static unsigned char dataout = 0;
-     static unsigned int i=1;
-     static unsigned int jj=0;
-     Get_Pixel_Colour(Colour);
-     Set_Display_Letters_SSD1963(X_Position,Y_Position);
-     TFT_CS = 0;
-     for(jj=Letter_Font_Length_Bytes*4; jj<Letter_Font_Length_Bytes*5; jj++){
-      for(x=0; x<8; x++){
-          dataout = Letter_Font[jj] &i;
-        if(dataout){
-           Write_Data_SSD1963(Pixel);
-         }else  {Write_Data_SSD1963(Background_Colour);}
-          i=i<<1;
-        if (i>128){
-              i=1;}
-       }
-     }
-     TFT_CS = 1;
-}
-
-void Write_Letter_F(unsigned int X_Position, unsigned int Y_Position, unsigned int Colour){
-     static unsigned char x=0;
-     static unsigned char dataout = 0;
-     static unsigned int i=1;
-     static unsigned int jj=0;
-     Get_Pixel_Colour(Colour);
-     Set_Display_Letters_SSD1963(X_Position,Y_Position);
-     TFT_CS = 0;
-     for(jj=Letter_Font_Length_Bytes*5; jj<Letter_Font_Length_Bytes*6; jj++){
-      for(x=0; x<8; x++){
-          dataout = Letter_Font[jj] &i;
-        if(dataout){
-           Write_Data_SSD1963(Pixel);
-         }else  {Write_Data_SSD1963(Background_Colour);}
-          i=i<<1;
-        if (i>128){
-              i=1;}
-       }
-     }
-     TFT_CS = 1;
-}
-
-
-void Write_Letter_G(unsigned int X_Position, unsigned int Y_Position, unsigned int Colour){
-     static unsigned char x=0;
-     static unsigned char dataout = 0;
-     static unsigned int i=1;
-     static unsigned int jj=0;
-     Get_Pixel_Colour(Colour);
-     Set_Display_Letters_SSD1963(X_Position,Y_Position);
-     TFT_CS = 0;
-     for(jj=Letter_Font_Length_Bytes*6; jj<Letter_Font_Length_Bytes*7; jj++){
-      for(x=0; x<8; x++){
-          dataout = Letter_Font[jj] &i;
-        if(dataout){
-           Write_Data_SSD1963(Pixel);
-         }else  {Write_Data_SSD1963(Background_Colour);}
-          i=i<<1;
-        if (i>128){
-              i=1;}
-       }
-     }
-     TFT_CS = 1;
-}
-
-
-void Write_Letter_H(unsigned int X_Position, unsigned int Y_Position, unsigned int Colour){
-     static unsigned char x=0;
-     static unsigned char dataout = 0;
-     static unsigned int i=1;
-     static unsigned int jj=0;
-     Get_Pixel_Colour(Colour);
-     Set_Display_Letters_SSD1963(X_Position,Y_Position);
-     TFT_CS = 0;
-     for(jj=Letter_Font_Length_Bytes*7; jj<Letter_Font_Length_Bytes*8; jj++){
-      for(x=0; x<8; x++){
-          dataout = Letter_Font[jj] &i;
-        if(dataout){
-           Write_Data_SSD1963(Pixel);
-         }else  {Write_Data_SSD1963(Background_Colour);}
-          i=i<<1;
-        if (i>128){
-              i=1;}
-       }
-     }
-     TFT_CS = 1;
-}
-
-
-void Write_Letter_I(unsigned int X_Position, unsigned int Y_Position, unsigned int Colour){
-     static unsigned char x=0;
-     static unsigned char dataout = 0;
-     static unsigned int i=1;
-     static unsigned int jj=0;
-     Get_Pixel_Colour(Colour);
-     Set_Display_Letters_SSD1963(X_Position,Y_Position);
-     TFT_CS = 0;
-     for(jj=Letter_Font_Length_Bytes*8; jj<Letter_Font_Length_Bytes*9; jj++){
-      for(x=0; x<8; x++){
-          dataout = Letter_Font[jj] &i;
-        if(dataout){
-           Write_Data_SSD1963(Pixel);
-         }else  {Write_Data_SSD1963(Background_Colour);}
-          i=i<<1;
-        if (i>128){
-              i=1;}
-       }
-     }
-     TFT_CS = 1;
-}
-
-
-void Write_Letter_J(unsigned int X_Position, unsigned int Y_Position, unsigned int Colour){
-     static unsigned char x=0;
-     static unsigned char dataout = 0;
-     static unsigned int i=1;
-     static unsigned int jj=0;
-     Get_Pixel_Colour(Colour);
-     Set_Display_Letters_SSD1963(X_Position,Y_Position);
-     TFT_CS = 0;
-     for(jj=Letter_Font_Length_Bytes*9; jj<Letter_Font_Length_Bytes*10; jj++){
-      for(x=0; x<8; x++){
-          dataout = Letter_Font[jj] &i;
-        if(dataout){
-           Write_Data_SSD1963(Pixel);
-         }else  {Write_Data_SSD1963(Background_Colour);}
-          i=i<<1;
-        if (i>128){
-              i=1;}
-       }
-     }
-     TFT_CS = 1;
-}
-
-
-void Write_Letter_K(unsigned int X_Position, unsigned int Y_Position, unsigned int Colour){
-     static unsigned char x=0;
-     static unsigned char dataout = 0;
-     static unsigned int i=1;
-     static unsigned int jj=0;
-     Get_Pixel_Colour(Colour);
-     Set_Display_Letters_SSD1963(X_Position,Y_Position);
-     TFT_CS = 0;
-     for(jj=Letter_Font_Length_Bytes*10; jj<Letter_Font_Length_Bytes*11; jj++){
-      for(x=0; x<8; x++){
-          dataout = Letter_Font[jj] &i;
-        if(dataout){
-           Write_Data_SSD1963(Pixel);
-         }else  {Write_Data_SSD1963(Background_Colour);}
-          i=i<<1;
-        if (i>128){
-              i=1;}
-       }
-     }
-     TFT_CS = 1;
-}
-
-
-void Write_Letter_L(unsigned int X_Position, unsigned int Y_Position, unsigned int Colour){
-     static unsigned char x=0;
-     static unsigned char dataout = 0;
-     static unsigned int i=1;
-     static unsigned int jj=0;
-     Get_Pixel_Colour(Colour);
-     Set_Display_Letters_SSD1963(X_Position,Y_Position);
-     TFT_CS = 0;
-     for(jj=Letter_Font_Length_Bytes*11; jj<Letter_Font_Length_Bytes*12; jj++){
-      for(x=0; x<8; x++){
-          dataout = Letter_Font[jj] &i;
-        if(dataout){
-           Write_Data_SSD1963(Pixel);
-         }else  {Write_Data_SSD1963(Background_Colour);}
-          i=i<<1;
-        if (i>128){
-              i=1;}
-       }
-     }
-     TFT_CS = 1;
-}
-
-
-void Write_Letter_M(unsigned int X_Position, unsigned int Y_Position, unsigned int Colour){
+void Write_Character_C(unsigned int X_Position, unsigned int Y_Position, unsigned int Colour){
      static unsigned char x=0;
      static unsigned char dataout = 0;
      static unsigned int i=1;
@@ -1168,8 +1177,7 @@ void Write_Letter_M(unsigned int X_Position, unsigned int Y_Position, unsigned i
      TFT_CS = 1;
 }
 
-
-void Write_Letter_N(unsigned int X_Position, unsigned int Y_Position, unsigned int Colour){
+void Write_Character_D(unsigned int X_Position, unsigned int Y_Position, unsigned int Colour){
      static unsigned char x=0;
      static unsigned char dataout = 0;
      static unsigned int i=1;
@@ -1191,8 +1199,7 @@ void Write_Letter_N(unsigned int X_Position, unsigned int Y_Position, unsigned i
      TFT_CS = 1;
 }
 
-
-void Write_Letter_O(unsigned int X_Position, unsigned int Y_Position, unsigned int Colour){
+void Write_Character_E(unsigned int X_Position, unsigned int Y_Position, unsigned int Colour){
      static unsigned char x=0;
      static unsigned char dataout = 0;
      static unsigned int i=1;
@@ -1214,8 +1221,7 @@ void Write_Letter_O(unsigned int X_Position, unsigned int Y_Position, unsigned i
      TFT_CS = 1;
 }
 
-
-void Write_Letter_P(unsigned int X_Position, unsigned int Y_Position, unsigned int Colour){
+void Write_Character_F(unsigned int X_Position, unsigned int Y_Position, unsigned int Colour){
      static unsigned char x=0;
      static unsigned char dataout = 0;
      static unsigned int i=1;
@@ -1237,8 +1243,7 @@ void Write_Letter_P(unsigned int X_Position, unsigned int Y_Position, unsigned i
      TFT_CS = 1;
 }
 
-
-void Write_Letter_Q(unsigned int X_Position, unsigned int Y_Position, unsigned int Colour){
+void Write_Character_G(unsigned int X_Position, unsigned int Y_Position, unsigned int Colour){
      static unsigned char x=0;
      static unsigned char dataout = 0;
      static unsigned int i=1;
@@ -1260,8 +1265,7 @@ void Write_Letter_Q(unsigned int X_Position, unsigned int Y_Position, unsigned i
      TFT_CS = 1;
 }
 
-
-void Write_Letter_R(unsigned int X_Position, unsigned int Y_Position, unsigned int Colour){
+void Write_Character_H(unsigned int X_Position, unsigned int Y_Position, unsigned int Colour){
      static unsigned char x=0;
      static unsigned char dataout = 0;
      static unsigned int i=1;
@@ -1283,8 +1287,7 @@ void Write_Letter_R(unsigned int X_Position, unsigned int Y_Position, unsigned i
      TFT_CS = 1;
 }
 
-
-void Write_Letter_S(unsigned int X_Position, unsigned int Y_Position, unsigned int Colour){
+void Write_Character_I(unsigned int X_Position, unsigned int Y_Position, unsigned int Colour){
      static unsigned char x=0;
      static unsigned char dataout = 0;
      static unsigned int i=1;
@@ -1306,8 +1309,7 @@ void Write_Letter_S(unsigned int X_Position, unsigned int Y_Position, unsigned i
      TFT_CS = 1;
 }
 
-
-void Write_Letter_T(unsigned int X_Position, unsigned int Y_Position, unsigned int Colour){
+void Write_Character_J(unsigned int X_Position, unsigned int Y_Position, unsigned int Colour){
      static unsigned char x=0;
      static unsigned char dataout = 0;
      static unsigned int i=1;
@@ -1329,8 +1331,7 @@ void Write_Letter_T(unsigned int X_Position, unsigned int Y_Position, unsigned i
      TFT_CS = 1;
 }
 
-
-void Write_Letter_U(unsigned int X_Position, unsigned int Y_Position, unsigned int Colour){
+void Write_Character_K(unsigned int X_Position, unsigned int Y_Position, unsigned int Colour){
      static unsigned char x=0;
      static unsigned char dataout = 0;
      static unsigned int i=1;
@@ -1352,8 +1353,7 @@ void Write_Letter_U(unsigned int X_Position, unsigned int Y_Position, unsigned i
      TFT_CS = 1;
 }
 
-
-void Write_Letter_V(unsigned int X_Position, unsigned int Y_Position, unsigned int Colour){
+void Write_Character_L(unsigned int X_Position, unsigned int Y_Position, unsigned int Colour){
      static unsigned char x=0;
      static unsigned char dataout = 0;
      static unsigned int i=1;
@@ -1375,8 +1375,7 @@ void Write_Letter_V(unsigned int X_Position, unsigned int Y_Position, unsigned i
      TFT_CS = 1;
 }
 
-
-void Write_Letter_W(unsigned int X_Position, unsigned int Y_Position, unsigned int Colour){
+void Write_Character_M(unsigned int X_Position, unsigned int Y_Position, unsigned int Colour){
      static unsigned char x=0;
      static unsigned char dataout = 0;
      static unsigned int i=1;
@@ -1398,8 +1397,7 @@ void Write_Letter_W(unsigned int X_Position, unsigned int Y_Position, unsigned i
      TFT_CS = 1;
 }
 
-
-void Write_Letter_X(unsigned int X_Position, unsigned int Y_Position, unsigned int Colour){
+void Write_Character_N(unsigned int X_Position, unsigned int Y_Position, unsigned int Colour){
      static unsigned char x=0;
      static unsigned char dataout = 0;
      static unsigned int i=1;
@@ -1421,8 +1419,7 @@ void Write_Letter_X(unsigned int X_Position, unsigned int Y_Position, unsigned i
      TFT_CS = 1;
 }
 
-
-void Write_Letter_Y(unsigned int X_Position, unsigned int Y_Position, unsigned int Colour){
+void Write_Character_O(unsigned int X_Position, unsigned int Y_Position, unsigned int Colour){
      static unsigned char x=0;
      static unsigned char dataout = 0;
      static unsigned int i=1;
@@ -1444,8 +1441,7 @@ void Write_Letter_Y(unsigned int X_Position, unsigned int Y_Position, unsigned i
      TFT_CS = 1;
 }
 
-
-void Write_Letter_Z(unsigned int X_Position, unsigned int Y_Position, unsigned int Colour){
+void Write_Character_P(unsigned int X_Position, unsigned int Y_Position, unsigned int Colour){
      static unsigned char x=0;
      static unsigned char dataout = 0;
      static unsigned int i=1;
@@ -1467,8 +1463,227 @@ void Write_Letter_Z(unsigned int X_Position, unsigned int Y_Position, unsigned i
      TFT_CS = 1;
 }
 
+void Write_Character_Q(unsigned int X_Position, unsigned int Y_Position, unsigned int Colour){
+     static unsigned char x=0;
+     static unsigned char dataout = 0;
+     static unsigned int i=1;
+     static unsigned int jj=0;
+     Get_Pixel_Colour(Colour);
+     Set_Display_Letters_SSD1963(X_Position,Y_Position);
+     TFT_CS = 0;
+     for(jj=Letter_Font_Length_Bytes*26; jj<Letter_Font_Length_Bytes*27; jj++){
+      for(x=0; x<8; x++){
+          dataout = Letter_Font[jj] &i;
+        if(dataout){
+           Write_Data_SSD1963(Pixel);
+         }else  {Write_Data_SSD1963(Background_Colour);}
+          i=i<<1;
+        if (i>128){
+              i=1;}
+       }
+     }
+     TFT_CS = 1;
+}
 
-void Write_Letter_Space(unsigned int X_Position, unsigned int Y_Position, unsigned int Colour){
+void Write_Character_R(unsigned int X_Position, unsigned int Y_Position, unsigned int Colour){
+     static unsigned char x=0;
+     static unsigned char dataout = 0;
+     static unsigned int i=1;
+     static unsigned int jj=0;
+     Get_Pixel_Colour(Colour);
+     Set_Display_Letters_SSD1963(X_Position,Y_Position);
+     TFT_CS = 0;
+     for(jj=Letter_Font_Length_Bytes*27; jj<Letter_Font_Length_Bytes*28; jj++){
+      for(x=0; x<8; x++){
+          dataout = Letter_Font[jj] &i;
+        if(dataout){
+           Write_Data_SSD1963(Pixel);
+         }else  {Write_Data_SSD1963(Background_Colour);}
+          i=i<<1;
+        if (i>128){
+              i=1;}
+       }
+     }
+     TFT_CS = 1;
+}
+
+void Write_Character_S(unsigned int X_Position, unsigned int Y_Position, unsigned int Colour){
+     static unsigned char x=0;
+     static unsigned char dataout = 0;
+     static unsigned int i=1;
+     static unsigned int jj=0;
+     Get_Pixel_Colour(Colour);
+     Set_Display_Letters_SSD1963(X_Position,Y_Position);
+     TFT_CS = 0;
+     for(jj=Letter_Font_Length_Bytes*28; jj<Letter_Font_Length_Bytes*29; jj++){
+      for(x=0; x<8; x++){
+          dataout = Letter_Font[jj] &i;
+        if(dataout){
+           Write_Data_SSD1963(Pixel);
+         }else  {Write_Data_SSD1963(Background_Colour);}
+          i=i<<1;
+        if (i>128){
+              i=1;}
+       }
+     }
+     TFT_CS = 1;
+}
+
+void Write_Character_T(unsigned int X_Position, unsigned int Y_Position, unsigned int Colour){
+     static unsigned char x=0;
+     static unsigned char dataout = 0;
+     static unsigned int i=1;
+     static unsigned int jj=0;
+     Get_Pixel_Colour(Colour);
+     Set_Display_Letters_SSD1963(X_Position,Y_Position);
+     TFT_CS = 0;
+     for(jj=Letter_Font_Length_Bytes*29; jj<Letter_Font_Length_Bytes*30; jj++){
+      for(x=0; x<8; x++){
+          dataout = Letter_Font[jj] &i;
+        if(dataout){
+           Write_Data_SSD1963(Pixel);
+         }else  {Write_Data_SSD1963(Background_Colour);}
+          i=i<<1;
+        if (i>128){
+              i=1;}
+       }
+     }
+     TFT_CS = 1;
+}
+
+void Write_Character_U(unsigned int X_Position, unsigned int Y_Position, unsigned int Colour){
+     static unsigned char x=0;
+     static unsigned char dataout = 0;
+     static unsigned int i=1;
+     static unsigned int jj=0;
+     Get_Pixel_Colour(Colour);
+     Set_Display_Letters_SSD1963(X_Position,Y_Position);
+     TFT_CS = 0;
+     for(jj=Letter_Font_Length_Bytes*30; jj<Letter_Font_Length_Bytes*31; jj++){
+      for(x=0; x<8; x++){
+          dataout = Letter_Font[jj] &i;
+        if(dataout){
+           Write_Data_SSD1963(Pixel);
+         }else  {Write_Data_SSD1963(Background_Colour);}
+          i=i<<1;
+        if (i>128){
+              i=1;}
+       }
+     }
+     TFT_CS = 1;
+}
+
+void Write_Character_V(unsigned int X_Position, unsigned int Y_Position, unsigned int Colour){
+     static unsigned char x=0;
+     static unsigned char dataout = 0;
+     static unsigned int i=1;
+     static unsigned int jj=0;
+     Get_Pixel_Colour(Colour);
+     Set_Display_Letters_SSD1963(X_Position,Y_Position);
+     TFT_CS = 0;
+     for(jj=Letter_Font_Length_Bytes*31; jj<Letter_Font_Length_Bytes*32; jj++){
+      for(x=0; x<8; x++){
+          dataout = Letter_Font[jj] &i;
+        if(dataout){
+           Write_Data_SSD1963(Pixel);
+         }else  {Write_Data_SSD1963(Background_Colour);}
+          i=i<<1;
+        if (i>128){
+              i=1;}
+       }
+     }
+     TFT_CS = 1;
+}
+
+void Write_Character_W(unsigned int X_Position, unsigned int Y_Position, unsigned int Colour){
+     static unsigned char x=0;
+     static unsigned char dataout = 0;
+     static unsigned int i=1;
+     static unsigned int jj=0;
+     Get_Pixel_Colour(Colour);
+     Set_Display_Letters_SSD1963(X_Position,Y_Position);
+     TFT_CS = 0;
+     for(jj=Letter_Font_Length_Bytes*32; jj<Letter_Font_Length_Bytes*33; jj++){
+      for(x=0; x<8; x++){
+          dataout = Letter_Font[jj] &i;
+        if(dataout){
+           Write_Data_SSD1963(Pixel);
+         }else  {Write_Data_SSD1963(Background_Colour);}
+          i=i<<1;
+        if (i>128){
+              i=1;}
+       }
+     }
+     TFT_CS = 1;
+}
+
+void Write_Character_X(unsigned int X_Position, unsigned int Y_Position, unsigned int Colour){
+     static unsigned char x=0;
+     static unsigned char dataout = 0;
+     static unsigned int i=1;
+     static unsigned int jj=0;
+     Get_Pixel_Colour(Colour);
+     Set_Display_Letters_SSD1963(X_Position,Y_Position);
+     TFT_CS = 0;
+     for(jj=Letter_Font_Length_Bytes*33; jj<Letter_Font_Length_Bytes*34; jj++){
+      for(x=0; x<8; x++){
+          dataout = Letter_Font[jj] &i;
+        if(dataout){
+           Write_Data_SSD1963(Pixel);
+         }else  {Write_Data_SSD1963(Background_Colour);}
+          i=i<<1;
+        if (i>128){
+              i=1;}
+       }
+     }
+     TFT_CS = 1;
+}
+
+void Write_Character_Y(unsigned int X_Position, unsigned int Y_Position, unsigned int Colour){
+     static unsigned char x=0;
+     static unsigned char dataout = 0;
+     static unsigned int i=1;
+     static unsigned int jj=0;
+     Get_Pixel_Colour(Colour);
+     Set_Display_Letters_SSD1963(X_Position,Y_Position);
+     TFT_CS = 0;
+     for(jj=Letter_Font_Length_Bytes*34; jj<Letter_Font_Length_Bytes*35; jj++){
+      for(x=0; x<8; x++){
+          dataout = Letter_Font[jj] &i;
+        if(dataout){
+           Write_Data_SSD1963(Pixel);
+         }else  {Write_Data_SSD1963(Background_Colour);}
+          i=i<<1;
+        if (i>128){
+              i=1;}
+       }
+     }
+     TFT_CS = 1;
+}
+
+void Write_Character_Z(unsigned int X_Position, unsigned int Y_Position, unsigned int Colour){
+     static unsigned char x=0;
+     static unsigned char dataout = 0;
+     static unsigned int i=1;
+     static unsigned int jj=0;
+     Get_Pixel_Colour(Colour);
+     Set_Display_Letters_SSD1963(X_Position,Y_Position);
+     TFT_CS = 0;
+     for(jj=Letter_Font_Length_Bytes*35; jj<Letter_Font_Length_Bytes*36; jj++){
+      for(x=0; x<8; x++){
+          dataout = Letter_Font[jj] &i;
+        if(dataout){
+           Write_Data_SSD1963(Pixel);
+         }else  {Write_Data_SSD1963(Background_Colour);}
+          i=i<<1;
+        if (i>128){
+              i=1;}
+       }
+     }
+     TFT_CS = 1;
+}
+
+void Write_Character_Space(unsigned int X_Position, unsigned int Y_Position, unsigned int Colour){
      static unsigned char x=0;
      static unsigned char dataout = 0;
      static unsigned int jj=0;
@@ -1478,11 +1693,9 @@ void Write_Letter_Space(unsigned int X_Position, unsigned int Y_Position, unsign
      
       for(jj=0; jj<Letter_Font_Length_Bytes*10; jj++){    //Space
         Write_Data_SSD1963(Background_Colour);
-      }
-
-     TFT_CS = 1;
+       }
+       TFT_CS = 1;
 }
-
 
 void Set_Display_Numbers_SSD1963(unsigned int X_Position, unsigned int Y_Position){
 
@@ -1508,8 +1721,6 @@ void Set_Display_Numbers_SSD1963(unsigned int X_Position, unsigned int Y_Positio
      Write_Command_SSD1963(0x2C);             //WRITE MEMORY START               D/C = 0;
      TFT_CS = 1;
 }
-
-
 
 void Write_Number_Nine(unsigned int X_Position, unsigned int Y_Position, unsigned int Colour){
     static unsigned char x=0;
@@ -1709,7 +1920,6 @@ void Write_Number_One(unsigned int X_Position, unsigned int Y_Position, unsigned
       TFT_CS = 1;
 }
 
-
 void Write_Number_Zero(unsigned int X_Position, unsigned int Y_Position, unsigned int Colour){
      static unsigned char x = 0;
      static unsigned char dataout = 0;
@@ -1744,16 +1954,16 @@ void Write_Number_Space(unsigned int X_Position, unsigned int Y_Position){
       TFT_CS = 1;
 }
 
- unsigned char DoneOne   = 1;
- unsigned char DoneTwo   = 1;
- unsigned char DoneThree = 1;
- unsigned char DoneFour  = 1;
- unsigned char DoneFive  = 1;
- unsigned char DoneSix   = 1;
- unsigned char DoneSeven = 1;
- unsigned char DoneEight = 1;
- unsigned char DoneNine  = 1;
- unsigned char ValidEight = 0, ValidSeven = 0, ValidSix = 0, ValidFive = 0, ValidFour = 0, ValidThree = 0, ValidTwo = 0, ValidOne = 0, ValidZero = 0;
+unsigned char DoneOne   = 1;
+unsigned char DoneTwo   = 1;
+unsigned char DoneThree = 1;
+unsigned char DoneFour  = 1;
+unsigned char DoneFive  = 1;
+unsigned char DoneSix   = 1;
+unsigned char DoneSeven = 1;
+unsigned char DoneEight = 1;
+unsigned char DoneNine  = 1;
+unsigned char ValidEight = 0, ValidSeven = 0, ValidSix = 0, ValidFive = 0, ValidFour = 0, ValidThree = 0, ValidTwo = 0, ValidOne = 0, ValidZero = 0;
 
 void Write_Number(unsigned long num,unsigned int X_Position,unsigned int Y_Position, unsigned int Colour) {
 
@@ -2326,7 +2536,6 @@ void Write_Number(unsigned long num,unsigned int X_Position,unsigned int Y_Posit
     }}*/
 }
 
-
 void Write_Number_Copy(unsigned long num,unsigned int X_Position,unsigned int Y_Position, unsigned int Colour) {
 
    unsigned int Font_Width;
@@ -2336,7 +2545,6 @@ void Write_Number_Copy(unsigned long num,unsigned int X_Position,unsigned int Y_
    Font_Width = Number_Font_Width + Number_Font_Spacing;
 
    LongWordTostr(num,numberstring);     // Converts input unsigned long integer number to a string
-
 
     switch(numberstring[9])  {  //units position
 
@@ -2369,128 +2577,137 @@ void Write_Number_Copy(unsigned long num,unsigned int X_Position,unsigned int Y_
    }
 }
 
-
 void Display_Character(unsigned char Value, unsigned int X_Position, unsigned int Y_Position, unsigned char Colour){
 
      switch (Value)  {
-     
-     case 49:    Write_Number_One(X_Position,Y_Position-3, Colour);
+     case 48:    Write_Character_0(X_Position,Y_Position, Colour);
                  break;
-     case 50:    Write_Number_Two(X_Position,Y_Position-3, Colour);
+     case 49:    Write_Character_1(X_Position,Y_Position, Colour);
                  break;
-     case 51:    Write_Number_Three(X_Position,Y_Position-3, Colour);
+     case 50:    Write_Character_2(X_Position,Y_Position, Colour);
                  break;
-     case 52:    Write_Number_Four(X_Position,Y_Position-3, Colour);
+     case 51:    Write_Character_3(X_Position,Y_Position, Colour);
                  break;
-     case 65:    Write_Letter_A(X_Position,Y_Position, Colour);
+     case 52:    Write_Character_4(X_Position,Y_Position, Colour);
                  break;
-     case 66:    Write_Letter_B(X_Position,Y_Position, Colour);
+     case 53:    Write_Character_5(X_Position,Y_Position, Colour);
                  break;
-     case 67:    Write_Letter_C(X_Position,Y_Position, Colour);
+     case 54:    Write_Character_6(X_Position,Y_Position, Colour);
                  break;
-     case 68:    Write_Letter_D(X_Position,Y_Position, Colour);
+     case 55:    Write_Character_7(X_Position,Y_Position, Colour);
                  break;
-     case 69:    Write_Letter_E(X_Position,Y_Position, Colour);
+     case 56:    Write_Character_8(X_Position,Y_Position, Colour);
                  break;
-     case 70:    Write_Letter_F(X_Position,Y_Position, Colour);
+     case 57:    Write_Character_9(X_Position,Y_Position, Colour);
                  break;
-     case 71:    Write_Letter_G(X_Position,Y_Position, Colour);
+     case 65:    Write_Character_A(X_Position,Y_Position, Colour);
                  break;
-     case 72:    Write_Letter_H(X_Position,Y_Position, Colour);
+     case 66:    Write_Character_B(X_Position,Y_Position, Colour);
                  break;
-     case 73:    Write_Letter_I(X_Position,Y_Position, Colour);
+     case 67:    Write_Character_C(X_Position,Y_Position, Colour);
                  break;
-     case 74:    Write_Letter_J(X_Position,Y_Position, Colour);
+     case 68:    Write_Character_D(X_Position,Y_Position, Colour);
                  break;
-     case 75:    Write_Letter_K(X_Position,Y_Position, Colour);
+     case 69:    Write_Character_E(X_Position,Y_Position, Colour);
                  break;
-     case 76:    Write_Letter_L(X_Position,Y_Position, Colour);
+     case 70:    Write_Character_F(X_Position,Y_Position, Colour);
                  break;
-     case 77:    Write_Letter_M(X_Position,Y_Position, Colour);
+     case 71:    Write_Character_G(X_Position,Y_Position, Colour);
                  break;
-     case 78:    Write_Letter_N(X_Position,Y_Position, Colour);
+     case 72:    Write_Character_H(X_Position,Y_Position, Colour);
                  break;
-     case 79:    Write_Letter_O(X_Position,Y_Position, Colour);
+     case 73:    Write_Character_I(X_Position,Y_Position, Colour);
                  break;
-     case 80:    Write_Letter_P(X_Position,Y_Position, Colour);
+     case 74:    Write_Character_J(X_Position,Y_Position, Colour);
                  break;
-     case 81:    Write_Letter_Q(X_Position,Y_Position, Colour);
+     case 75:    Write_Character_K(X_Position,Y_Position, Colour);
                  break;
-     case 82:    Write_Letter_R(X_Position,Y_Position, Colour);
+     case 76:    Write_Character_L(X_Position,Y_Position, Colour);
                  break;
-     case 83:    Write_Letter_S(X_Position,Y_Position, Colour);
+     case 77:    Write_Character_M(X_Position,Y_Position, Colour);
                  break;
-     case 84:    Write_Letter_T(X_Position,Y_Position, Colour);
+     case 78:    Write_Character_N(X_Position,Y_Position, Colour);
                  break;
-     case 85:    Write_Letter_U(X_Position,Y_Position, Colour);
+     case 79:    Write_Character_O(X_Position,Y_Position, Colour);
                  break;
-     case 86:    Write_Letter_V(X_Position,Y_Position, Colour);
+     case 80:    Write_Character_P(X_Position,Y_Position, Colour);
                  break;
-     case 87:    Write_Letter_W(X_Position,Y_Position, Colour);
+     case 81:    Write_Character_Q(X_Position,Y_Position, Colour);
                  break;
-     case 88:    Write_Letter_X(X_Position,Y_Position, Colour);
+     case 82:    Write_Character_R(X_Position,Y_Position, Colour);
                  break;
-     case 89:    Write_Letter_Y(X_Position,Y_Position, Colour);
+     case 83:    Write_Character_S(X_Position,Y_Position, Colour);
                  break;
-     case 90:    Write_Letter_Z(X_Position,Y_Position, Colour);
+     case 84:    Write_Character_T(X_Position,Y_Position, Colour);
                  break;
-     case 97:    Write_Letter_A(X_Position,Y_Position, Colour);
+     case 85:    Write_Character_U(X_Position,Y_Position, Colour);
                  break;
-     case 98:    Write_Letter_B(X_Position,Y_Position, Colour);
+     case 86:    Write_Character_V(X_Position,Y_Position, Colour);
                  break;
-     case 99:    Write_Letter_C(X_Position,Y_Position, Colour);
+     case 87:    Write_Character_W(X_Position,Y_Position, Colour);
                  break;
-     case 100:   Write_Letter_D(X_Position,Y_Position, Colour);
+     case 88:    Write_Character_X(X_Position,Y_Position, Colour);
                  break;
-     case 101:   Write_Letter_E(X_Position,Y_Position, Colour);
+     case 89:    Write_Character_Y(X_Position,Y_Position, Colour);
                  break;
-     case 102:   Write_Letter_F(X_Position,Y_Position, Colour);
+     case 90:    Write_Character_Z(X_Position,Y_Position, Colour);
                  break;
-     case 103:   Write_Letter_G(X_Position,Y_Position, Colour);
+     case 97:    Write_Character_A(X_Position,Y_Position, Colour);
                  break;
-     case 104:   Write_Letter_H(X_Position,Y_Position, Colour);
+     case 98:    Write_Character_B(X_Position,Y_Position, Colour);
                  break;
-     case 105:   Write_Letter_I(X_Position,Y_Position, Colour);
+     case 99:    Write_Character_C(X_Position,Y_Position, Colour);
                  break;
-     case 106:   Write_Letter_J(X_Position,Y_Position, Colour);
+     case 100:   Write_Character_D(X_Position,Y_Position, Colour);
                  break;
-     case 107:   Write_Letter_K(X_Position,Y_Position, Colour);
+     case 101:   Write_Character_E(X_Position,Y_Position, Colour);
                  break;
-     case 108:   Write_Letter_L(X_Position,Y_Position, Colour);
+     case 102:   Write_Character_F(X_Position,Y_Position, Colour);
                  break;
-     case 109:   Write_Letter_M(X_Position,Y_Position, Colour);
+     case 103:   Write_Character_G(X_Position,Y_Position, Colour);
                  break;
-     case 110:   Write_Letter_N(X_Position,Y_Position, Colour);
+     case 104:   Write_Character_H(X_Position,Y_Position, Colour);
                  break;
-     case 111:   Write_Letter_O(X_Position,Y_Position, Colour);
+     case 105:   Write_Character_I(X_Position,Y_Position, Colour);
                  break;
-     case 112:   Write_Letter_P(X_Position,Y_Position, Colour);
+     case 106:   Write_Character_J(X_Position,Y_Position, Colour);
                  break;
-     case 113:   Write_Letter_Q(X_Position,Y_Position, Colour);
+     case 107:   Write_Character_K(X_Position,Y_Position, Colour);
                  break;
-     case 114:   Write_Letter_R(X_Position,Y_Position, Colour);
+     case 108:   Write_Character_L(X_Position,Y_Position, Colour);
                  break;
-     case 115:   Write_Letter_S(X_Position,Y_Position, Colour);
+     case 109:   Write_Character_M(X_Position,Y_Position, Colour);
                  break;
-     case 116:   Write_Letter_T(X_Position,Y_Position, Colour);
+     case 110:   Write_Character_N(X_Position,Y_Position, Colour);
                  break;
-     case 117:   Write_Letter_U(X_Position,Y_Position, Colour);
+     case 111:   Write_Character_O(X_Position,Y_Position, Colour);
                  break;
-     case 118:   Write_Letter_V(X_Position,Y_Position, Colour);
+     case 112:   Write_Character_P(X_Position,Y_Position, Colour);
                  break;
-     case 119:   Write_Letter_W(X_Position,Y_Position, Colour);
+     case 113:   Write_Character_Q(X_Position,Y_Position, Colour);
                  break;
-     case 120:   Write_Letter_X(X_Position,Y_Position, Colour);
+     case 114:   Write_Character_R(X_Position,Y_Position, Colour);
                  break;
-     case 121:   Write_Letter_Y(X_Position,Y_Position, Colour);
+     case 115:   Write_Character_S(X_Position,Y_Position, Colour);
                  break;
-     case 122:   Write_Letter_Z(X_Position,Y_Position, Colour);
+     case 116:   Write_Character_T(X_Position,Y_Position, Colour);
                  break;
-     default:    Write_Letter_Space(X_Position,Y_Position, Colour);
+     case 117:   Write_Character_U(X_Position,Y_Position, Colour);
+                 break;
+     case 118:   Write_Character_V(X_Position,Y_Position, Colour);
+                 break;
+     case 119:   Write_Character_W(X_Position,Y_Position, Colour);
+                 break;
+     case 120:   Write_Character_X(X_Position,Y_Position, Colour);
+                 break;
+     case 121:   Write_Character_Y(X_Position,Y_Position, Colour);
+                 break;
+     case 122:   Write_Character_Z(X_Position,Y_Position, Colour);
+                 break;
+     default:    Write_Character_Space(X_Position,Y_Position, Colour);
                  break;
     }
 }
-
 
 void Display_PTY(unsigned char Value){  //John Bs' Write Character - No silly blanking required
    unsigned int xpos = 400;
@@ -2498,373 +2715,386 @@ void Display_PTY(unsigned char Value){  //John Bs' Write Character - No silly bl
 
      switch (Value)  {
 
-     case 1:     Write_Letter_N(xpos,ypos,White);
-                 Write_Letter_E(xpos+ Letter_Font_Width*1,ypos,White);
-                 Write_Letter_W(xpos+Letter_Font_Width*2,ypos,White);
-                 Write_Letter_S(xpos+Letter_Font_Width*3,ypos,White);
-                 Write_Letter_Space(xpos+ Letter_Font_Width*4,ypos,White);
-                 Write_Letter_Space(xpos+ Letter_Font_Width*5,ypos,White);
-                 Write_Letter_Space(xpos+ Letter_Font_Width*6,ypos,White);
-                 Write_Letter_Space(xpos+ Letter_Font_Width*7,ypos,White);
-                 Write_Letter_Space(xpos+ Letter_Font_Width*8,ypos,White);
-                 Write_Letter_Space(xpos+ Letter_Font_Width*9,ypos,White);
-                 Write_Letter_Space(xpos+ Letter_Font_Width*10,ypos,White);
-                 Write_Letter_Space(xpos+ Letter_Font_Width*11,ypos,White);
-                 Write_Letter_Space(xpos+ Letter_Font_Width*12,ypos,White);
-                 Write_Letter_Space(xpos+ Letter_Font_Width*13,ypos,White);
-                 Write_Letter_Space(xpos+ Letter_Font_Width*14,ypos,White);
-                 Write_Letter_Space(xpos+ Letter_Font_Width*15,ypos,White);
-                 Write_Letter_Space(xpos+ Letter_Font_Width*16,ypos,White);
+     case 1:     Write_Character_N(xpos,ypos,White);
+                 Write_Character_E(xpos+ Letter_Font_Width*1,ypos,White);
+                 Write_Character_W(xpos+Letter_Font_Width*2,ypos,White);
+                 Write_Character_S(xpos+Letter_Font_Width*3,ypos,White);
+                 Write_Character_Space(xpos+ Letter_Font_Width*4,ypos,White);
+                 Write_Character_Space(xpos+ Letter_Font_Width*5,ypos,White);
+                 Write_Character_Space(xpos+ Letter_Font_Width*6,ypos,White);
+                 Write_Character_Space(xpos+ Letter_Font_Width*7,ypos,White);
+                 Write_Character_Space(xpos+ Letter_Font_Width*8,ypos,White);
+                 Write_Character_Space(xpos+ Letter_Font_Width*9,ypos,White);
+                 Write_Character_Space(xpos+ Letter_Font_Width*10,ypos,White);
+                 Write_Character_Space(xpos+ Letter_Font_Width*11,ypos,White);
+                 Write_Character_Space(xpos+ Letter_Font_Width*12,ypos,White);
+                 Write_Character_Space(xpos+ Letter_Font_Width*13,ypos,White);
+                 Write_Character_Space(xpos+ Letter_Font_Width*14,ypos,White);
+                 Write_Character_Space(xpos+ Letter_Font_Width*15,ypos,White);
+                 Write_Character_Space(xpos+ Letter_Font_Width*16,ypos,White);
                  break;
-     case 2:     Write_Letter_C(xpos,ypos,White);
-                 Write_Letter_U(xpos+ Letter_Font_Width*1,ypos,White);
-                 Write_Letter_R(xpos+Letter_Font_Width*2,ypos,White);
-                 Write_Letter_R(xpos+Letter_Font_Width*3,ypos,White);
-                 Write_Letter_E(xpos+ Letter_Font_Width*4,ypos,White);
-                 Write_Letter_N(xpos+Letter_Font_Width*5,ypos,White);
-                 Write_Letter_T(xpos+Letter_Font_Width*6,ypos,White);
-                 Write_Letter_Space(xpos+ Letter_Font_Width*7,ypos,White);
-                 Write_Letter_A(xpos+Letter_Font_Width*8,ypos,White);
-                 Write_Letter_F(xpos+Letter_Font_Width*9,ypos,White);
-                 Write_Letter_F(xpos+ Letter_Font_Width*10,ypos,White);
-                 Write_Letter_A(xpos+Letter_Font_Width*11,ypos,White);
-                 Write_Letter_I(xpos+Letter_Font_Width*12,ypos,White);
-                 Write_Letter_R(xpos+ Letter_Font_Width*13,ypos,White);
-                 Write_Letter_S(xpos+Letter_Font_Width*14,ypos,White);
-                 Write_Letter_Space(xpos+ Letter_Font_Width*15,ypos,White);
-                 Write_Letter_Space(xpos+ Letter_Font_Width*16,ypos,White);
+                 
+     case 2:     Write_Character_C(xpos,ypos,White);
+                 Write_Character_U(xpos+ Letter_Font_Width*1,ypos,White);
+                 Write_Character_R(xpos+Letter_Font_Width*2,ypos,White);
+                 Write_Character_R(xpos+Letter_Font_Width*3,ypos,White);
+                 Write_Character_E(xpos+ Letter_Font_Width*4,ypos,White);
+                 Write_Character_N(xpos+Letter_Font_Width*5,ypos,White);
+                 Write_Character_T(xpos+Letter_Font_Width*6,ypos,White);
+                 Write_Character_Space(xpos+ Letter_Font_Width*7,ypos,White);
+                 Write_Character_A(xpos+Letter_Font_Width*8,ypos,White);
+                 Write_Character_F(xpos+Letter_Font_Width*9,ypos,White);
+                 Write_Character_F(xpos+ Letter_Font_Width*10,ypos,White);
+                 Write_Character_A(xpos+Letter_Font_Width*11,ypos,White);
+                 Write_Character_I(xpos+Letter_Font_Width*12,ypos,White);
+                 Write_Character_R(xpos+ Letter_Font_Width*13,ypos,White);
+                 Write_Character_S(xpos+Letter_Font_Width*14,ypos,White);
+                 Write_Character_Space(xpos+ Letter_Font_Width*15,ypos,White);
+                 Write_Character_Space(xpos+ Letter_Font_Width*16,ypos,White);
                  break;
-     case 3:     Write_Letter_I(xpos,ypos,White);
-                 Write_Letter_N(xpos+ Letter_Font_Width*1,ypos,White);
-                 Write_Letter_F(xpos+Letter_Font_Width*2,ypos,White);
-                 Write_Letter_O(xpos+Letter_Font_Width*3,ypos,White);
-                 Write_Letter_R(xpos+ Letter_Font_Width*4,ypos,White);
-                 Write_Letter_M(xpos+Letter_Font_Width*5,ypos,White);
-                 Write_Letter_A(xpos+Letter_Font_Width*6,ypos,White);
-                 Write_Letter_T(xpos+ Letter_Font_Width*7,ypos,White);
-                 Write_Letter_I(xpos+Letter_Font_Width*8,ypos,White);
-                 Write_Letter_O(xpos+ Letter_Font_Width*9,ypos,White);
-                 Write_Letter_N(xpos+ Letter_Font_Width*10,ypos,White);
-                 Write_Letter_Space(xpos+ Letter_Font_Width*11,ypos,White);
-                 Write_Letter_Space(xpos+ Letter_Font_Width*12,ypos,White);
-                 Write_Letter_Space(xpos+ Letter_Font_Width*13,ypos,White);
-                 Write_Letter_Space(xpos+ Letter_Font_Width*14,ypos,White);
-                 Write_Letter_Space(xpos+ Letter_Font_Width*15,ypos,White);
-                 Write_Letter_Space(xpos+ Letter_Font_Width*16,ypos,White);
+                 
+     case 3:     Write_Character_I(xpos,ypos,White);
+                 Write_Character_N(xpos+ Letter_Font_Width*1,ypos,White);
+                 Write_Character_F(xpos+Letter_Font_Width*2,ypos,White);
+                 Write_Character_O(xpos+Letter_Font_Width*3,ypos,White);
+                 Write_Character_R(xpos+ Letter_Font_Width*4,ypos,White);
+                 Write_Character_M(xpos+Letter_Font_Width*5,ypos,White);
+                 Write_Character_A(xpos+Letter_Font_Width*6,ypos,White);
+                 Write_Character_T(xpos+ Letter_Font_Width*7,ypos,White);
+                 Write_Character_I(xpos+Letter_Font_Width*8,ypos,White);
+                 Write_Character_O(xpos+ Letter_Font_Width*9,ypos,White);
+                 Write_Character_N(xpos+ Letter_Font_Width*10,ypos,White);
+                 Write_Character_Space(xpos+ Letter_Font_Width*11,ypos,White);
+                 Write_Character_Space(xpos+ Letter_Font_Width*12,ypos,White);
+                 Write_Character_Space(xpos+ Letter_Font_Width*13,ypos,White);
+                 Write_Character_Space(xpos+ Letter_Font_Width*14,ypos,White);
+                 Write_Character_Space(xpos+ Letter_Font_Width*15,ypos,White);
+                 Write_Character_Space(xpos+ Letter_Font_Width*16,ypos,White);
                  break;
-     case 4:     Write_Letter_S(xpos,ypos,White);
-                 Write_Letter_P(xpos+ Letter_Font_Width*1,ypos,White);
-                 Write_Letter_O(xpos+Letter_Font_Width*2,ypos,White);
-                 Write_Letter_R(xpos+Letter_Font_Width*3,ypos,White);
-                 Write_Letter_T(xpos+ Letter_Font_Width*4,ypos,White);
-                 Write_Letter_Space(xpos+Letter_Font_Width*5,ypos,White);
-                 Write_Letter_Space(xpos+Letter_Font_Width*6,ypos,White);
-                 Write_Letter_Space(xpos+ Letter_Font_Width*7,ypos,White);
-                 Write_Letter_Space(xpos+Letter_Font_Width*8,ypos,White);
-                 Write_Letter_Space(xpos+ Letter_Font_Width*9,ypos,White);
-                 Write_Letter_Space(xpos+ Letter_Font_Width*10,ypos,White);
-                 Write_Letter_Space(xpos+ Letter_Font_Width*11,ypos,White);
-                 Write_Letter_Space(xpos+ Letter_Font_Width*12,ypos,White);
-                 Write_Letter_Space(xpos+ Letter_Font_Width*13,ypos,White);
-                 Write_Letter_Space(xpos+ Letter_Font_Width*14,ypos,White);
-                 Write_Letter_Space(xpos+ Letter_Font_Width*15,ypos,White);
-                 Write_Letter_Space(xpos+ Letter_Font_Width*16,ypos,White);
+                 
+     case 4:     Write_Character_S(xpos,ypos,White);
+                 Write_Character_P(xpos+ Letter_Font_Width*1,ypos,White);
+                 Write_Character_O(xpos+Letter_Font_Width*2,ypos,White);
+                 Write_Character_R(xpos+Letter_Font_Width*3,ypos,White);
+                 Write_Character_T(xpos+ Letter_Font_Width*4,ypos,White);
+                 Write_Character_Space(xpos+Letter_Font_Width*5,ypos,White);
+                 Write_Character_Space(xpos+Letter_Font_Width*6,ypos,White);
+                 Write_Character_Space(xpos+ Letter_Font_Width*7,ypos,White);
+                 Write_Character_Space(xpos+ Letter_Font_Width*8,ypos,White);
+                 Write_Character_Space(xpos+ Letter_Font_Width*9,ypos,White);
+                 Write_Character_Space(xpos+ Letter_Font_Width*10,ypos,White);
+                 Write_Character_Space(xpos+ Letter_Font_Width*11,ypos,White);
+                 Write_Character_Space(xpos+ Letter_Font_Width*12,ypos,White);
+                 Write_Character_Space(xpos+ Letter_Font_Width*13,ypos,White);
+                 Write_Character_Space(xpos+ Letter_Font_Width*14,ypos,White);
+                 Write_Character_Space(xpos+ Letter_Font_Width*15,ypos,White);
+                 Write_Character_Space(xpos+ Letter_Font_Width*16,ypos,White);
                  break;
-     case 5:     Write_Letter_E(xpos,ypos,White);
-                 Write_Letter_D(xpos+ Letter_Font_Width*1,ypos,White);
-                 Write_Letter_U(xpos+Letter_Font_Width*2,ypos,White);
-                 Write_Letter_C(xpos+Letter_Font_Width*3,ypos,White);
-                 Write_Letter_A(xpos+ Letter_Font_Width*4,ypos,White);
-                 Write_Letter_T(xpos+Letter_Font_Width*5,ypos,White);
-                 Write_Letter_I(xpos+Letter_Font_Width*6,ypos,White);
-                 Write_Letter_O(xpos+ Letter_Font_Width*7,ypos,White);
-                 Write_Letter_N(xpos+Letter_Font_Width*8,ypos,White);
-                 Write_Letter_Space(xpos+ Letter_Font_Width*9,ypos,White);
-                 Write_Letter_Space(xpos+ Letter_Font_Width*10,ypos,White);
-                 Write_Letter_Space(xpos+ Letter_Font_Width*11,ypos,White);
-                 Write_Letter_Space(xpos+ Letter_Font_Width*12,ypos,White);
-                 Write_Letter_Space(xpos+ Letter_Font_Width*13,ypos,White);
-                 Write_Letter_Space(xpos+ Letter_Font_Width*14,ypos,White);
-                 Write_Letter_Space(xpos+ Letter_Font_Width*15,ypos,White);
-                 Write_Letter_Space(xpos+ Letter_Font_Width*16,ypos,White);
-                 break;
-     case 6:     Write_Letter_D(xpos,ypos,White);
-                 Write_Letter_R(xpos+ Letter_Font_Width*1,ypos,White);
-                 Write_Letter_A(xpos+Letter_Font_Width*2,ypos,White);
-                 Write_Letter_M(xpos+Letter_Font_Width*3,ypos,White);
-                 Write_Letter_A(xpos+ Letter_Font_Width*4,ypos,White);
-                 Write_Letter_Space(xpos+Letter_Font_Width*5,ypos,White);
-                 Write_Letter_Space(xpos+Letter_Font_Width*6,ypos,White);
-                 Write_Letter_Space(xpos+ Letter_Font_Width*7,ypos,White);
-                 Write_Letter_Space(xpos+Letter_Font_Width*8,ypos,White);
-                 Write_Letter_Space(xpos+ Letter_Font_Width*9,ypos,White);
-                 Write_Letter_Space(xpos+ Letter_Font_Width*10,ypos,White);
-                 Write_Letter_Space(xpos+ Letter_Font_Width*11,ypos,White);
-                 Write_Letter_Space(xpos+ Letter_Font_Width*12,ypos,White);
-                 Write_Letter_Space(xpos+ Letter_Font_Width*13,ypos,White);
-                 Write_Letter_Space(xpos+ Letter_Font_Width*14,ypos,White);
-                 Write_Letter_Space(xpos+ Letter_Font_Width*15,ypos,White);
-                 Write_Letter_Space(xpos+ Letter_Font_Width*16,ypos,White);
-                 break;
-     case 7:     Write_Letter_C(xpos,ypos,White);
-                 Write_Letter_U(xpos+ Letter_Font_Width*1,ypos,White);
-                 Write_Letter_L(xpos+Letter_Font_Width*2,ypos,White);
-                 Write_Letter_T(xpos+Letter_Font_Width*3,ypos,White);
-                 Write_Letter_U(xpos+ Letter_Font_Width*4,ypos,White);
-                 Write_Letter_R(xpos+Letter_Font_Width*5,ypos,White);
-                 Write_Letter_E(xpos+Letter_Font_Width*6,ypos,White);
-                 Write_Letter_Space(xpos+ Letter_Font_Width*7,ypos,White);
-                 Write_Letter_Space(xpos+Letter_Font_Width*8,ypos,White);
-                 Write_Letter_Space(xpos+ Letter_Font_Width*9,ypos,White);
-                 Write_Letter_Space(xpos+ Letter_Font_Width*10,ypos,White);
-                 Write_Letter_Space(xpos+ Letter_Font_Width*11,ypos,White);
-                 Write_Letter_Space(xpos+ Letter_Font_Width*12,ypos,White);
-                 Write_Letter_Space(xpos+ Letter_Font_Width*13,ypos,White);
-                 Write_Letter_Space(xpos+ Letter_Font_Width*14,ypos,White);
-                 Write_Letter_Space(xpos+ Letter_Font_Width*15,ypos,White);
-                 Write_Letter_Space(xpos+ Letter_Font_Width*16,ypos,White);
-                 break;
-     case 8:     Write_Letter_S(xpos,ypos,White);
-                 Write_Letter_C(xpos+ Letter_Font_Width*1,ypos,White);
-                 Write_Letter_I(xpos+Letter_Font_Width*2,ypos,White);
-                 Write_Letter_E(xpos+Letter_Font_Width*3,ypos,White);
-                 Write_Letter_N(xpos+ Letter_Font_Width*4,ypos,White);
-                 Write_Letter_C(xpos+Letter_Font_Width*5,ypos,White);
-                 Write_Letter_E(xpos+Letter_Font_Width*6,ypos,White);
-                 Write_Letter_Space(xpos+ Letter_Font_Width*7,ypos,White);
-                 Write_Letter_Space(xpos+Letter_Font_Width*8,ypos,White);
-                 Write_Letter_Space(xpos+ Letter_Font_Width*9,ypos,White);
-                 Write_Letter_Space(xpos+ Letter_Font_Width*10,ypos,White);
-                 Write_Letter_Space(xpos+ Letter_Font_Width*11,ypos,White);
-                 Write_Letter_Space(xpos+ Letter_Font_Width*12,ypos,White);
-                 Write_Letter_Space(xpos+ Letter_Font_Width*13,ypos,White);
-                 Write_Letter_Space(xpos+ Letter_Font_Width*14,ypos,White);
-                 Write_Letter_Space(xpos+ Letter_Font_Width*15,ypos,White);
-                 Write_Letter_Space(xpos+ Letter_Font_Width*16,ypos,White);
-                 break;
-     case 9:     Write_Letter_V(xpos,ypos,White);
-                 Write_Letter_A(xpos+ Letter_Font_Width*1,ypos,White);
-                 Write_Letter_R(xpos+Letter_Font_Width*2,ypos,White);
-                 Write_Letter_I(xpos+Letter_Font_Width*3,ypos,White);
-                 Write_Letter_E(xpos+ Letter_Font_Width*4,ypos,White);
-                 Write_Letter_D(xpos+Letter_Font_Width*5,ypos,White);
-                 Write_Letter_Space(xpos+Letter_Font_Width*6,ypos,White);
-                 Write_Letter_Space(xpos+ Letter_Font_Width*7,ypos,White);
-                 Write_Letter_Space(xpos+Letter_Font_Width*8,ypos,White);
-                 Write_Letter_Space(xpos+ Letter_Font_Width*9,ypos,White);
-                 Write_Letter_Space(xpos+ Letter_Font_Width*10,ypos,White);
-                 Write_Letter_Space(xpos+ Letter_Font_Width*11,ypos,White);
-                 Write_Letter_Space(xpos+ Letter_Font_Width*12,ypos,White);
-                 Write_Letter_Space(xpos+ Letter_Font_Width*13,ypos,White);
-                 Write_Letter_Space(xpos+ Letter_Font_Width*14,ypos,White);
-                 Write_Letter_Space(xpos+ Letter_Font_Width*15,ypos,White);
-                 Write_Letter_Space(xpos+ Letter_Font_Width*16,ypos,White);
-                 break;
-     case 10:    Write_Letter_P(xpos,ypos,White);
-                 Write_Letter_O(xpos+ Letter_Font_Width*1,ypos,White);
-                 Write_Letter_P(xpos+Letter_Font_Width*2,ypos,White);
-                 Write_Letter_Space(xpos+Letter_Font_Width*3,ypos,White);
-                 Write_Letter_M(xpos+ Letter_Font_Width*4,ypos,White);
-                 Write_Letter_U(xpos+Letter_Font_Width*5,ypos,White);
-                 Write_Letter_S(xpos+Letter_Font_Width*6,ypos,White);
-                 Write_Letter_I(xpos+ Letter_Font_Width*7,ypos,White);
-                 Write_Letter_C(xpos+Letter_Font_Width*8,ypos,White);
-                 Write_Letter_Space(xpos+ Letter_Font_Width*9,ypos,White);
-                 Write_Letter_Space(xpos+ Letter_Font_Width*10,ypos,White);
-                 Write_Letter_Space(xpos+ Letter_Font_Width*11,ypos,White);
-                 Write_Letter_Space(xpos+ Letter_Font_Width*12,ypos,White);
-                 Write_Letter_Space(xpos+ Letter_Font_Width*13,ypos,White);
-                 Write_Letter_Space(xpos+ Letter_Font_Width*14,ypos,White);
-                 Write_Letter_Space(xpos+ Letter_Font_Width*15,ypos,White);
-                 Write_Letter_Space(xpos+ Letter_Font_Width*16,ypos,White);
 
+     case 5:     Write_Character_E(xpos,ypos,White);
+                 Write_Character_D(xpos+ Letter_Font_Width*1,ypos,White);
+                 Write_Character_U(xpos+Letter_Font_Width*2,ypos,White);
+                 Write_Character_C(xpos+Letter_Font_Width*3,ypos,White);
+                 Write_Character_A(xpos+ Letter_Font_Width*4,ypos,White);
+                 Write_Character_T(xpos+Letter_Font_Width*5,ypos,White);
+                 Write_Character_I(xpos+Letter_Font_Width*6,ypos,White);
+                 Write_Character_O(xpos+ Letter_Font_Width*7,ypos,White);
+                 Write_Character_N(xpos+Letter_Font_Width*8,ypos,White);
+                 Write_Character_Space(xpos+ Letter_Font_Width*9,ypos,White);
+                 Write_Character_Space(xpos+ Letter_Font_Width*10,ypos,White);
+                 Write_Character_Space(xpos+ Letter_Font_Width*11,ypos,White);
+                 Write_Character_Space(xpos+ Letter_Font_Width*12,ypos,White);
+                 Write_Character_Space(xpos+ Letter_Font_Width*13,ypos,White);
+                 Write_Character_Space(xpos+ Letter_Font_Width*14,ypos,White);
+                 Write_Character_Space(xpos+ Letter_Font_Width*15,ypos,White);
+                 Write_Character_Space(xpos+ Letter_Font_Width*16,ypos,White);
                  break;
-     case 11:    Write_Letter_R(xpos,ypos,White);
-                 Write_Letter_O(xpos+ Letter_Font_Width*1,ypos,White);
-                 Write_Letter_C(xpos+Letter_Font_Width*2,ypos,White);
-                 Write_Letter_K(xpos+Letter_Font_Width*3,ypos,White);
-                 Write_Letter_Space(xpos+ Letter_Font_Width*4,ypos,White);
-                 Write_Letter_M(xpos+Letter_Font_Width*5,ypos,White);
-                 Write_Letter_U(xpos+Letter_Font_Width*6,ypos,White);
-                 Write_Letter_S(xpos+ Letter_Font_Width*7,ypos,White);
-                 Write_Letter_I(xpos+Letter_Font_Width*8,ypos,White);
-                 Write_Letter_C(xpos+Letter_Font_Width*9,ypos,White);
-                 Write_Letter_Space(xpos+ Letter_Font_Width*10,ypos,White);
-                 Write_Letter_Space(xpos+Letter_Font_Width*11,ypos,White);
-                 Write_Letter_Space(xpos+Letter_Font_Width*12,ypos,White);
-                 Write_Letter_Space(xpos+ Letter_Font_Width*13,ypos,White);
-                 Write_Letter_Space(xpos+Letter_Font_Width*14,ypos,White);
-                 Write_Letter_Space(xpos+ Letter_Font_Width*15,ypos,White);
-                 Write_Letter_Space(xpos+ Letter_Font_Width*16,ypos,White);
-                 break;
-     case 12:    Write_Letter_E(xpos,ypos,White);
-                 Write_Letter_A(xpos+ Letter_Font_Width*1,ypos,White);
-                 Write_Letter_S(xpos+Letter_Font_Width*2,ypos,White);
-                 Write_Letter_Y(xpos+Letter_Font_Width*3,ypos,White);
-                 Write_Letter_Space(xpos+ Letter_Font_Width*4,ypos,White);
-                 Write_Letter_L(xpos+Letter_Font_Width*5,ypos,White);
-                 Write_Letter_I(xpos+Letter_Font_Width*6,ypos,White);
-                 Write_Letter_S(xpos+ Letter_Font_Width*7,ypos,White);
-                 Write_Letter_T(xpos+Letter_Font_Width*8,ypos,White);
-                 Write_Letter_E(xpos+Letter_Font_Width*9,ypos,White);
-                 Write_Letter_N(xpos+ Letter_Font_Width*10,ypos,White);
-                 Write_Letter_I(xpos+Letter_Font_Width*11,ypos,White);
-                 Write_Letter_N(xpos+Letter_Font_Width*12,ypos,White);
-                 Write_Letter_G(xpos+ Letter_Font_Width*13,ypos,White);
-                 Write_Letter_Space(xpos+Letter_Font_Width*14,ypos,White);
-                 Write_Letter_Space(xpos+ Letter_Font_Width*15,ypos,White);
-                 Write_Letter_Space(xpos+ Letter_Font_Width*16,ypos,White);
-                 break;
-     case 13:    Write_Letter_L(xpos,ypos,White);
-                 Write_Letter_I(xpos+ Letter_Font_Width*1,ypos,White);
-                 Write_Letter_G(xpos+Letter_Font_Width*2,ypos,White);
-                 Write_Letter_H(xpos+Letter_Font_Width*3,ypos,White);
-                 Write_Letter_T(xpos+ Letter_Font_Width*4,ypos,White);
-                 Write_Letter_Space(xpos+Letter_Font_Width*5,ypos,White);
-                 Write_Letter_C(xpos+Letter_Font_Width*6,ypos,White);
-                 Write_Letter_L(xpos+ Letter_Font_Width*7,ypos,White);
-                 Write_Letter_A(xpos+Letter_Font_Width*8,ypos,White);
-                 Write_Letter_S(xpos+Letter_Font_Width*9,ypos,White);
-                 Write_Letter_S(xpos+ Letter_Font_Width*10,ypos,White);
-                 Write_Letter_I(xpos+Letter_Font_Width*11,ypos,White);
-                 Write_Letter_C(xpos+Letter_Font_Width*12,ypos,White);
-                 Write_Letter_A(xpos+ Letter_Font_Width*13,ypos,White);
-                 Write_Letter_L(xpos+Letter_Font_Width*14,ypos,White);
-                 Write_Letter_Space(xpos+ Letter_Font_Width*15,ypos,White);
-                 Write_Letter_Space(xpos+ Letter_Font_Width*16,ypos,White);
-                 break;
-     case 14:    Write_Letter_S(xpos,ypos,White);
-                 Write_Letter_E(xpos+ Letter_Font_Width*1,ypos,White);
-                 Write_Letter_R(xpos+Letter_Font_Width*2,ypos,White);
-                 Write_Letter_I(xpos+Letter_Font_Width*3,ypos,White);
-                 Write_Letter_O(xpos+ Letter_Font_Width*4,ypos,White);
-                 Write_Letter_U(xpos+Letter_Font_Width*5,ypos,White);
-                 Write_Letter_S(xpos+Letter_Font_Width*6,ypos,White);
-                 Write_Letter_Space(xpos+ Letter_Font_Width*7,ypos,White);
-                 Write_Letter_C(xpos+Letter_Font_Width*8,ypos,White);
-                 Write_Letter_L(xpos+ Letter_Font_Width*9,ypos,White);
-                 Write_Letter_A(xpos+Letter_Font_Width*10,ypos,White);
-                 Write_Letter_S(xpos+Letter_Font_Width*11,ypos,White);
-                 Write_Letter_S(xpos+ Letter_Font_Width*12,ypos,White);
-                 Write_Letter_I(xpos+Letter_Font_Width*13,ypos,White);
-                 Write_Letter_C(xpos+Letter_Font_Width*14,ypos,White);
-                 Write_Letter_A(xpos+ Letter_Font_Width*15,ypos,White);
-                 Write_Letter_L(xpos+Letter_Font_Width*16,ypos,White);
-                 break;
-     case 15:    Write_Letter_O(xpos,ypos,White);
-                 Write_Letter_T(xpos+ Letter_Font_Width*1,ypos,White);
-                 Write_Letter_H(xpos+Letter_Font_Width*2,ypos,White);
-                 Write_Letter_E(xpos+Letter_Font_Width*3,ypos,White);
-                 Write_Letter_R(xpos+ Letter_Font_Width*4,ypos,White);
-                 Write_Letter_Space(xpos+Letter_Font_Width*5,ypos,White);
-                 Write_Letter_M(xpos+Letter_Font_Width*6,ypos,White);
-                 Write_Letter_U(xpos+ Letter_Font_Width*7,ypos,White);
-                 Write_Letter_S(xpos+Letter_Font_Width*8,ypos,White);
-                 Write_Letter_I(xpos+ Letter_Font_Width*9,ypos,White);
-                 Write_Letter_C(xpos+Letter_Font_Width*10,ypos,White);
-                 Write_Letter_Space(xpos+ Letter_Font_Width*11,ypos,White);
-                 Write_Letter_Space(xpos+ Letter_Font_Width*12,ypos,White);
-                 Write_Letter_Space(xpos+ Letter_Font_Width*13,ypos,White);
-                 Write_Letter_Space(xpos+ Letter_Font_Width*14,ypos,White);
-                 Write_Letter_Space(xpos+ Letter_Font_Width*15,ypos,White);
-                 Write_Letter_Space(xpos+ Letter_Font_Width*16,ypos,White);
-                 break;
-     case 16:    Write_Letter_W(xpos,ypos,White);
-                 Write_Letter_E(xpos+ Letter_Font_Width*1,ypos,White);
-                 Write_Letter_A(xpos+Letter_Font_Width*2,ypos,White);
-                 Write_Letter_T(xpos+Letter_Font_Width*3,ypos,White);
-                 Write_Letter_H(xpos+ Letter_Font_Width*4,ypos,White);
-                 Write_Letter_E(xpos+Letter_Font_Width*5,ypos,White);
-                 Write_Letter_R(xpos+Letter_Font_Width*6,ypos,White);
-                 Write_Letter_Space(xpos+ Letter_Font_Width*7,ypos,White);
-                 Write_Letter_Space(xpos+ Letter_Font_Width*8,ypos,White);
-                 Write_Letter_Space(xpos+ Letter_Font_Width*9,ypos,White);
-                 Write_Letter_Space(xpos+ Letter_Font_Width*10,ypos,White);
-                 Write_Letter_Space(xpos+ Letter_Font_Width*11,ypos,White);
-                 Write_Letter_Space(xpos+ Letter_Font_Width*12,ypos,White);
-                 Write_Letter_Space(xpos+ Letter_Font_Width*13,ypos,White);
-                 Write_Letter_Space(xpos+ Letter_Font_Width*14,ypos,White);
-                 Write_Letter_Space(xpos+ Letter_Font_Width*15,ypos,White);
-                 Write_Letter_Space(xpos+ Letter_Font_Width*16,ypos,White);
-                 break;
-     case 17:    Write_Letter_F(xpos,ypos,White);
-                 Write_Letter_I(xpos+ Letter_Font_Width*1,ypos,White);
-                 Write_Letter_N(xpos+Letter_Font_Width*2,ypos,White);
-                 Write_Letter_A(xpos+Letter_Font_Width*3,ypos,White);
-                 Write_Letter_N(xpos+ Letter_Font_Width*4,ypos,White);
-                 Write_Letter_C(xpos+Letter_Font_Width*5,ypos,White);
-                 Write_Letter_E(xpos+Letter_Font_Width*6,ypos,White);
-                 Write_Letter_Space(xpos+ Letter_Font_Width*7,ypos,White);
-                 Write_Letter_Space(xpos+ Letter_Font_Width*8,ypos,White);
-                 Write_Letter_Space(xpos+ Letter_Font_Width*9,ypos,White);
-                 Write_Letter_Space(xpos+ Letter_Font_Width*10,ypos,White);
-                 Write_Letter_Space(xpos+ Letter_Font_Width*11,ypos,White);
-                 Write_Letter_Space(xpos+ Letter_Font_Width*12,ypos,White);
-                 Write_Letter_Space(xpos+ Letter_Font_Width*13,ypos,White);
-                 Write_Letter_Space(xpos+ Letter_Font_Width*14,ypos,White);
-                 Write_Letter_Space(xpos+ Letter_Font_Width*15,ypos,White);
-                 Write_Letter_Space(xpos+ Letter_Font_Width*16,ypos,White);
+
+     case 6:     Write_Character_D(xpos,ypos,White);
+                 Write_Character_R(xpos+ Letter_Font_Width*1,ypos,White);
+                 Write_Character_A(xpos+Letter_Font_Width*2,ypos,White);
+                 Write_Character_M(xpos+Letter_Font_Width*3,ypos,White);
+                 Write_Character_A(xpos+ Letter_Font_Width*4,ypos,White);
+                 Write_Character_Space(xpos+ Letter_Font_Width*7,ypos,White);
+                 Write_Character_Space(xpos+ Letter_Font_Width*8,ypos,White);
+                 Write_Character_Space(xpos+ Letter_Font_Width*9,ypos,White);
+                 Write_Character_Space(xpos+ Letter_Font_Width*10,ypos,White);
+                 Write_Character_Space(xpos+ Letter_Font_Width*11,ypos,White);
+                 Write_Character_Space(xpos+ Letter_Font_Width*12,ypos,White);
+                 Write_Character_Space(xpos+ Letter_Font_Width*13,ypos,White);
+                 Write_Character_Space(xpos+ Letter_Font_Width*14,ypos,White);
+                 Write_Character_Space(xpos+ Letter_Font_Width*15,ypos,White);
+                 Write_Character_Space(xpos+ Letter_Font_Width*16,ypos,White);
                  break;
                  
-     case 19:    Write_Letter_S(xpos,ypos,White);
-                 Write_Letter_O(xpos+ Letter_Font_Width*1,ypos,White);
-                 Write_Letter_C(xpos+Letter_Font_Width*2,ypos,White);
-                 Write_Letter_I(xpos+Letter_Font_Width*3,ypos,White);
-                 Write_Letter_A(xpos+ Letter_Font_Width*4,ypos,White);
-                 Write_Letter_L(xpos+Letter_Font_Width*5,ypos,White);
-                 Write_Letter_Space(xpos+Letter_Font_Width*6,ypos,White);
-                 Write_Letter_A(xpos+ Letter_Font_Width*7,ypos,White);
-                 Write_Letter_F(xpos+ Letter_Font_Width*8,ypos,White);
-                 Write_Letter_F(xpos+ Letter_Font_Width*9,ypos,White);
-                 Write_Letter_A(xpos+ Letter_Font_Width*10,ypos,White);
-                 Write_Letter_I(xpos+ Letter_Font_Width*11,ypos,White);
-                 Write_Letter_R(xpos+ Letter_Font_Width*12,ypos,White);
-                 Write_Letter_S(xpos+ Letter_Font_Width*13,ypos,White);
-                 Write_Letter_Space(xpos+ Letter_Font_Width*14,ypos,White);
-                 Write_Letter_Space(xpos+ Letter_Font_Width*15,ypos,White);
-                 Write_Letter_Space(xpos+ Letter_Font_Width*16,ypos,White);
+     case 7:     Write_Character_C(xpos,ypos,White);
+                 Write_Character_U(xpos+ Letter_Font_Width*1,ypos,White);
+                 Write_Character_L(xpos+Letter_Font_Width*2,ypos,White);
+                 Write_Character_T(xpos+Letter_Font_Width*3,ypos,White);
+                 Write_Character_U(xpos+ Letter_Font_Width*4,ypos,White);
+                 Write_Character_R(xpos+Letter_Font_Width*5,ypos,White);
+                 Write_Character_E(xpos+Letter_Font_Width*6,ypos,White);
+                 Write_Character_Space(xpos+ Letter_Font_Width*7,ypos,White);
+                 Write_Character_Space(xpos+ Letter_Font_Width*8,ypos,White);
+                 Write_Character_Space(xpos+ Letter_Font_Width*9,ypos,White);
+                 Write_Character_Space(xpos+ Letter_Font_Width*10,ypos,White);
+                 Write_Character_Space(xpos+ Letter_Font_Width*11,ypos,White);
+                 Write_Character_Space(xpos+ Letter_Font_Width*12,ypos,White);
+                 Write_Character_Space(xpos+ Letter_Font_Width*13,ypos,White);
+                 Write_Character_Space(xpos+ Letter_Font_Width*14,ypos,White);
+                 Write_Character_Space(xpos+ Letter_Font_Width*15,ypos,White);
+                 Write_Character_Space(xpos+ Letter_Font_Width*16,ypos,White);
+                 break;
+
+                 
+     case 8:     Write_Character_S(xpos,ypos,White);
+                 Write_Character_C(xpos+ Letter_Font_Width*1,ypos,White);
+                 Write_Character_I(xpos+Letter_Font_Width*2,ypos,White);
+                 Write_Character_E(xpos+Letter_Font_Width*3,ypos,White);
+                 Write_Character_N(xpos+ Letter_Font_Width*4,ypos,White);
+                 Write_Character_C(xpos+Letter_Font_Width*5,ypos,White);
+                 Write_Character_E(xpos+Letter_Font_Width*6,ypos,White);
+                 Write_Character_Space(xpos+ Letter_Font_Width*7,ypos,White);
+                 Write_Character_Space(xpos+Letter_Font_Width*8,ypos,White);
+                 Write_Character_Space(xpos+ Letter_Font_Width*9,ypos,White);
+                 Write_Character_Space(xpos+ Letter_Font_Width*10,ypos,White);
+                 Write_Character_Space(xpos+ Letter_Font_Width*11,ypos,White);
+                 Write_Character_Space(xpos+ Letter_Font_Width*12,ypos,White);
+                 Write_Character_Space(xpos+ Letter_Font_Width*13,ypos,White);
+                 Write_Character_Space(xpos+ Letter_Font_Width*14,ypos,White);
+                 Write_Character_Space(xpos+ Letter_Font_Width*15,ypos,White);
+                 Write_Character_Space(xpos+ Letter_Font_Width*16,ypos,White);
+                 break;
+
+     case 9:     Write_Character_V(xpos,ypos,White);
+                 Write_Character_A(xpos+ Letter_Font_Width*1,ypos,White);
+                 Write_Character_R(xpos+Letter_Font_Width*2,ypos,White);
+                 Write_Character_I(xpos+Letter_Font_Width*3,ypos,White);
+                 Write_Character_E(xpos+ Letter_Font_Width*4,ypos,White);
+                 Write_Character_D(xpos+Letter_Font_Width*5,ypos,White);
+                 Write_Character_Space(xpos+Letter_Font_Width*6,ypos,White);
+                 Write_Character_Space(xpos+ Letter_Font_Width*7,ypos,White);
+                 Write_Character_Space(xpos+Letter_Font_Width*8,ypos,White);
+                 Write_Character_Space(xpos+ Letter_Font_Width*9,ypos,White);
+                 Write_Character_Space(xpos+ Letter_Font_Width*10,ypos,White);
+                 Write_Character_Space(xpos+ Letter_Font_Width*11,ypos,White);
+                 Write_Character_Space(xpos+ Letter_Font_Width*12,ypos,White);
+                 Write_Character_Space(xpos+ Letter_Font_Width*13,ypos,White);
+                 Write_Character_Space(xpos+ Letter_Font_Width*14,ypos,White);
+                 Write_Character_Space(xpos+ Letter_Font_Width*15,ypos,White);
+                 Write_Character_Space(xpos+ Letter_Font_Width*16,ypos,White);
+                 break;
+
+     case 10:    Write_Character_P(xpos,ypos,White);
+                 Write_Character_O(xpos+ Letter_Font_Width*1,ypos,White);
+                 Write_Character_P(xpos+Letter_Font_Width*2,ypos,White);
+                 Write_Character_Space(xpos+Letter_Font_Width*3,ypos,White);
+                 Write_Character_M(xpos+ Letter_Font_Width*4,ypos,White);
+                 Write_Character_U(xpos+Letter_Font_Width*5,ypos,White);
+                 Write_Character_S(xpos+Letter_Font_Width*6,ypos,White);
+                 Write_Character_I(xpos+ Letter_Font_Width*7,ypos,White);
+                 Write_Character_C(xpos+Letter_Font_Width*8,ypos,White);
+                 Write_Character_Space(xpos+ Letter_Font_Width*9,ypos,White);
+                 Write_Character_Space(xpos+ Letter_Font_Width*10,ypos,White);
+                 Write_Character_Space(xpos+ Letter_Font_Width*11,ypos,White);
+                 Write_Character_Space(xpos+ Letter_Font_Width*12,ypos,White);
+                 Write_Character_Space(xpos+ Letter_Font_Width*13,ypos,White);
+                 Write_Character_Space(xpos+ Letter_Font_Width*14,ypos,White);
+                 Write_Character_Space(xpos+ Letter_Font_Width*15,ypos,White);
+                 Write_Character_Space(xpos+ Letter_Font_Width*16,ypos,White);
+                 break;
+
+     case 11:    Write_Character_R(xpos,ypos,White);
+                 Write_Character_O(xpos+ Letter_Font_Width*1,ypos,White);
+                 Write_Character_C(xpos+Letter_Font_Width*2,ypos,White);
+                 Write_Character_K(xpos+Letter_Font_Width*3,ypos,White);
+                 Write_Character_Space(xpos+ Letter_Font_Width*4,ypos,White);
+                 Write_Character_M(xpos+Letter_Font_Width*5,ypos,White);
+                 Write_Character_U(xpos+Letter_Font_Width*6,ypos,White);
+                 Write_Character_S(xpos+ Letter_Font_Width*7,ypos,White);
+                 Write_Character_I(xpos+Letter_Font_Width*8,ypos,White);
+                 Write_Character_C(xpos+Letter_Font_Width*9,ypos,White);
+                 Write_Character_Space(xpos+ Letter_Font_Width*10,ypos,White);
+                 Write_Character_Space(xpos+ Letter_Font_Width*11,ypos,White);
+                 Write_Character_Space(xpos+ Letter_Font_Width*12,ypos,White);
+                 Write_Character_Space(xpos+ Letter_Font_Width*13,ypos,White);
+                 Write_Character_Space(xpos+ Letter_Font_Width*14,ypos,White);
+                 Write_Character_Space(xpos+ Letter_Font_Width*15,ypos,White);
+                 Write_Character_Space(xpos+ Letter_Font_Width*16,ypos,White);
+                 break;
+
+     case 12:    Write_Character_E(xpos,ypos,White);
+                 Write_Character_A(xpos+ Letter_Font_Width*1,ypos,White);
+                 Write_Character_S(xpos+Letter_Font_Width*2,ypos,White);
+                 Write_Character_Y(xpos+Letter_Font_Width*3,ypos,White);
+                 Write_Character_Space(xpos+ Letter_Font_Width*4,ypos,White);
+                 Write_Character_L(xpos+Letter_Font_Width*5,ypos,White);
+                 Write_Character_I(xpos+Letter_Font_Width*6,ypos,White);
+                 Write_Character_S(xpos+ Letter_Font_Width*7,ypos,White);
+                 Write_Character_T(xpos+Letter_Font_Width*8,ypos,White);
+                 Write_Character_E(xpos+Letter_Font_Width*9,ypos,White);
+                 Write_Character_N(xpos+ Letter_Font_Width*10,ypos,White);
+                 Write_Character_I(xpos+Letter_Font_Width*11,ypos,White);
+                 Write_Character_N(xpos+Letter_Font_Width*12,ypos,White);
+                 Write_Character_G(xpos+ Letter_Font_Width*13,ypos,White);
+                 Write_Character_Space(xpos+Letter_Font_Width*14,ypos,White);
+                 Write_Character_Space(xpos+ Letter_Font_Width*15,ypos,White);
+                 Write_Character_Space(xpos+ Letter_Font_Width*16,ypos,White);
                  break;
                  
-     case 27:    Write_Letter_O(xpos,ypos,White);
-                 Write_Letter_L(xpos+ Letter_Font_Width*1,ypos,White);
-                 Write_Letter_D(xpos+Letter_Font_Width*2,ypos,White);
-                 Write_Letter_I(xpos+Letter_Font_Width*3,ypos,White);
-                 Write_Letter_E(xpos+ Letter_Font_Width*4,ypos,White);
-                 Write_Letter_S(xpos+Letter_Font_Width*5,ypos,White);
-                 Write_Letter_Space(xpos+Letter_Font_Width*6,ypos,White);
-                 Write_Letter_M(xpos+ Letter_Font_Width*7,ypos,White);
-                 Write_Letter_U(xpos+ Letter_Font_Width*8,ypos,White);
-                 Write_Letter_S(xpos+ Letter_Font_Width*9,ypos,White);
-                 Write_Letter_I(xpos+ Letter_Font_Width*10,ypos,White);
-                 Write_Letter_C(xpos+ Letter_Font_Width*11,ypos,White);
-                 Write_Letter_Space(xpos+ Letter_Font_Width*12,ypos,White);
-                 Write_Letter_Space(xpos+ Letter_Font_Width*13,ypos,White);
-                 Write_Letter_Space(xpos+ Letter_Font_Width*14,ypos,White);
-                 Write_Letter_Space(xpos+ Letter_Font_Width*15,ypos,White);
-                 Write_Letter_Space(xpos+ Letter_Font_Width*16,ypos,White);
+     case 13:    Write_Character_L(xpos,ypos,White);
+                 Write_Character_I(xpos+ Letter_Font_Width*1,ypos,White);
+                 Write_Character_G(xpos+Letter_Font_Width*2,ypos,White);
+                 Write_Character_H(xpos+Letter_Font_Width*3,ypos,White);
+                 Write_Character_T(xpos+ Letter_Font_Width*4,ypos,White);
+                 Write_Character_Space(xpos+Letter_Font_Width*5,ypos,White);
+                 Write_Character_C(xpos+Letter_Font_Width*6,ypos,White);
+                 Write_Character_L(xpos+ Letter_Font_Width*7,ypos,White);
+                 Write_Character_A(xpos+Letter_Font_Width*8,ypos,White);
+                 Write_Character_S(xpos+Letter_Font_Width*9,ypos,White);
+                 Write_Character_S(xpos+ Letter_Font_Width*10,ypos,White);
+                 Write_Character_I(xpos+Letter_Font_Width*11,ypos,White);
+                 Write_Character_C(xpos+Letter_Font_Width*12,ypos,White);
+                 Write_Character_A(xpos+ Letter_Font_Width*13,ypos,White);
+                 Write_Character_L(xpos+Letter_Font_Width*14,ypos,White);
+                 Write_Character_Space(xpos+ Letter_Font_Width*15,ypos,White);
+                 Write_Character_Space(xpos+ Letter_Font_Width*16,ypos,White);
                  break;
                  
-     default:    Write_Letter_W(xpos,ypos,White);  //like 20 for Religion
-                 Write_Letter_T(xpos+ Letter_Font_Width*1,ypos,White);
-                 Write_Letter_F(xpos+Letter_Font_Width*2,ypos,White);
-                 Write_Letter_Space(xpos+Letter_Font_Width*3,ypos,White);
-                 Write_Letter_Space(xpos+ Letter_Font_Width*4,ypos,White);
-                 Write_Letter_Space(xpos+Letter_Font_Width*5,ypos,White);
-                 Write_Letter_Space(xpos+Letter_Font_Width*6,ypos,White);
-                 Write_Letter_Space(xpos+ Letter_Font_Width*7,ypos,White);
-                 Write_Letter_Space(xpos+ Letter_Font_Width*8,ypos,White);
-                 Write_Letter_Space(xpos+ Letter_Font_Width*9,ypos,White);
-                 Write_Letter_Space(xpos+ Letter_Font_Width*10,ypos,White);
-                 Write_Letter_Space(xpos+ Letter_Font_Width*11,ypos,White);
-                 Write_Letter_Space(xpos+ Letter_Font_Width*12,ypos,White);
-                 Write_Letter_Space(xpos+ Letter_Font_Width*13,ypos,White);
-                 Write_Letter_Space(xpos+ Letter_Font_Width*14,ypos,White);
-                 Write_Letter_Space(xpos+ Letter_Font_Width*15,ypos,White);
-                 Write_Letter_Space(xpos+ Letter_Font_Width*16,ypos,White);
+     case 14:    Write_Character_S(xpos,ypos,White);
+                 Write_Character_E(xpos+ Letter_Font_Width*1,ypos,White);
+                 Write_Character_R(xpos+Letter_Font_Width*2,ypos,White);
+                 Write_Character_I(xpos+Letter_Font_Width*3,ypos,White);
+                 Write_Character_O(xpos+ Letter_Font_Width*4,ypos,White);
+                 Write_Character_U(xpos+Letter_Font_Width*5,ypos,White);
+                 Write_Character_S(xpos+Letter_Font_Width*6,ypos,White);
+                 Write_Character_Space(xpos+ Letter_Font_Width*7,ypos,White);
+                 Write_Character_C(xpos+Letter_Font_Width*8,ypos,White);
+                 Write_Character_L(xpos+ Letter_Font_Width*9,ypos,White);
+                 Write_Character_A(xpos+Letter_Font_Width*10,ypos,White);
+                 Write_Character_S(xpos+Letter_Font_Width*11,ypos,White);
+                 Write_Character_S(xpos+ Letter_Font_Width*12,ypos,White);
+                 Write_Character_I(xpos+Letter_Font_Width*13,ypos,White);
+                 Write_Character_C(xpos+Letter_Font_Width*14,ypos,White);
+                 Write_Character_A(xpos+ Letter_Font_Width*15,ypos,White);
+                 Write_Character_L(xpos+Letter_Font_Width*16,ypos,White);
+                 break;
+                 
+     case 15:    Write_Character_O(xpos,ypos,White);
+                 Write_Character_T(xpos+ Letter_Font_Width*1,ypos,White);
+                 Write_Character_H(xpos+Letter_Font_Width*2,ypos,White);
+                 Write_Character_E(xpos+Letter_Font_Width*3,ypos,White);
+                 Write_Character_R(xpos+ Letter_Font_Width*4,ypos,White);
+                 Write_Character_Space(xpos+Letter_Font_Width*5,ypos,White);
+                 Write_Character_M(xpos+Letter_Font_Width*6,ypos,White);
+                 Write_Character_U(xpos+ Letter_Font_Width*7,ypos,White);
+                 Write_Character_S(xpos+Letter_Font_Width*8,ypos,White);
+                 Write_Character_I(xpos+ Letter_Font_Width*9,ypos,White);
+                 Write_Character_C(xpos+Letter_Font_Width*10,ypos,White);
+                 Write_Character_Space(xpos+ Letter_Font_Width*11,ypos,White);
+                 Write_Character_Space(xpos+ Letter_Font_Width*12,ypos,White);
+                 Write_Character_Space(xpos+ Letter_Font_Width*13,ypos,White);
+                 Write_Character_Space(xpos+ Letter_Font_Width*14,ypos,White);
+                 Write_Character_Space(xpos+ Letter_Font_Width*15,ypos,White);
+                 Write_Character_Space(xpos+ Letter_Font_Width*16,ypos,White);
+                 break;
+                 
+     case 16:    Write_Character_W(xpos,ypos,White);
+                 Write_Character_E(xpos+ Letter_Font_Width*1,ypos,White);
+                 Write_Character_A(xpos+Letter_Font_Width*2,ypos,White);
+                 Write_Character_T(xpos+Letter_Font_Width*3,ypos,White);
+                 Write_Character_H(xpos+ Letter_Font_Width*4,ypos,White);
+                 Write_Character_E(xpos+Letter_Font_Width*5,ypos,White);
+                 Write_Character_R(xpos+Letter_Font_Width*6,ypos,White);
+                 Write_Character_Space(xpos+ Letter_Font_Width*7,ypos,White);
+                 Write_Character_Space(xpos+ Letter_Font_Width*8,ypos,White);
+                 Write_Character_Space(xpos+ Letter_Font_Width*9,ypos,White);
+                 Write_Character_Space(xpos+ Letter_Font_Width*10,ypos,White);
+                 Write_Character_Space(xpos+ Letter_Font_Width*11,ypos,White);
+                 Write_Character_Space(xpos+ Letter_Font_Width*12,ypos,White);
+                 Write_Character_Space(xpos+ Letter_Font_Width*13,ypos,White);
+                 Write_Character_Space(xpos+ Letter_Font_Width*14,ypos,White);
+                 Write_Character_Space(xpos+ Letter_Font_Width*15,ypos,White);
+                 Write_Character_Space(xpos+ Letter_Font_Width*16,ypos,White);
+                 break;
+
+     case 17:    Write_Character_F(xpos,ypos,White);
+                 Write_Character_I(xpos+ Letter_Font_Width*1,ypos,White);
+                 Write_Character_N(xpos+Letter_Font_Width*2,ypos,White);
+                 Write_Character_A(xpos+Letter_Font_Width*3,ypos,White);
+                 Write_Character_N(xpos+ Letter_Font_Width*4,ypos,White);
+                 Write_Character_C(xpos+Letter_Font_Width*5,ypos,White);
+                 Write_Character_E(xpos+Letter_Font_Width*6,ypos,White);
+                 Write_Character_Space(xpos+ Letter_Font_Width*7,ypos,White);
+                 Write_Character_Space(xpos+ Letter_Font_Width*8,ypos,White);
+                 Write_Character_Space(xpos+ Letter_Font_Width*9,ypos,White);
+                 Write_Character_Space(xpos+ Letter_Font_Width*10,ypos,White);
+                 Write_Character_Space(xpos+ Letter_Font_Width*11,ypos,White);
+                 Write_Character_Space(xpos+ Letter_Font_Width*12,ypos,White);
+                 Write_Character_Space(xpos+ Letter_Font_Width*13,ypos,White);
+                 Write_Character_Space(xpos+ Letter_Font_Width*14,ypos,White);
+                 Write_Character_Space(xpos+ Letter_Font_Width*15,ypos,White);
+                 Write_Character_Space(xpos+ Letter_Font_Width*16,ypos,White);
+                 break;
+                 
+     case 19:    Write_Character_S(xpos,ypos,White);
+                 Write_Character_O(xpos+ Letter_Font_Width*1,ypos,White);
+                 Write_Character_C(xpos+Letter_Font_Width*2,ypos,White);
+                 Write_Character_I(xpos+Letter_Font_Width*3,ypos,White);
+                 Write_Character_A(xpos+ Letter_Font_Width*4,ypos,White);
+                 Write_Character_L(xpos+Letter_Font_Width*5,ypos,White);
+                 Write_Character_Space(xpos+Letter_Font_Width*6,ypos,White);
+                 Write_Character_A(xpos+ Letter_Font_Width*7,ypos,White);
+                 Write_Character_F(xpos+ Letter_Font_Width*8,ypos,White);
+                 Write_Character_F(xpos+ Letter_Font_Width*9,ypos,White);
+                 Write_Character_A(xpos+ Letter_Font_Width*10,ypos,White);
+                 Write_Character_I(xpos+ Letter_Font_Width*11,ypos,White);
+                 Write_Character_R(xpos+ Letter_Font_Width*12,ypos,White);
+                 Write_Character_S(xpos+ Letter_Font_Width*13,ypos,White);
+                 Write_Character_Space(xpos+ Letter_Font_Width*14,ypos,White);
+                 Write_Character_Space(xpos+ Letter_Font_Width*15,ypos,White);
+                 Write_Character_Space(xpos+ Letter_Font_Width*16,ypos,White);
+                 break;
+                 
+     case 27:    Write_Character_O(xpos,ypos,White);
+                 Write_Character_L(xpos+ Letter_Font_Width*1,ypos,White);
+                 Write_Character_D(xpos+Letter_Font_Width*2,ypos,White);
+                 Write_Character_I(xpos+Letter_Font_Width*3,ypos,White);
+                 Write_Character_E(xpos+ Letter_Font_Width*4,ypos,White);
+                 Write_Character_S(xpos+Letter_Font_Width*5,ypos,White);
+                 Write_Character_Space(xpos+Letter_Font_Width*6,ypos,White);
+                 Write_Character_M(xpos+ Letter_Font_Width*7,ypos,White);
+                 Write_Character_U(xpos+ Letter_Font_Width*8,ypos,White);
+                 Write_Character_S(xpos+ Letter_Font_Width*9,ypos,White);
+                 Write_Character_I(xpos+ Letter_Font_Width*10,ypos,White);
+                 Write_Character_C(xpos+ Letter_Font_Width*11,ypos,White);
+                 Write_Character_Space(xpos+ Letter_Font_Width*12,ypos,White);
+                 Write_Character_Space(xpos+ Letter_Font_Width*13,ypos,White);
+                 Write_Character_Space(xpos+ Letter_Font_Width*14,ypos,White);
+                 Write_Character_Space(xpos+ Letter_Font_Width*15,ypos,White);
+                 Write_Character_Space(xpos+ Letter_Font_Width*16,ypos,White);
+                 break;
+                 
+     default:    Write_Character_W(xpos,ypos,White);  //like 20 for Religion
+                 Write_Character_T(xpos+ Letter_Font_Width*1,ypos,White);
+                 Write_Character_F(xpos+Letter_Font_Width*2,ypos,White);
+                 Write_Character_Space(xpos+Letter_Font_Width*3,ypos,White);
+                 Write_Character_Space(xpos+ Letter_Font_Width*4,ypos,White);
+                 Write_Character_Space(xpos+Letter_Font_Width*5,ypos,White);
+                 Write_Character_Space(xpos+Letter_Font_Width*6,ypos,White);
+                 Write_Character_Space(xpos+ Letter_Font_Width*7,ypos,White);
+                 Write_Character_Space(xpos+ Letter_Font_Width*8,ypos,White);
+                 Write_Character_Space(xpos+ Letter_Font_Width*9,ypos,White);
+                 Write_Character_Space(xpos+ Letter_Font_Width*10,ypos,White);
+                 Write_Character_Space(xpos+ Letter_Font_Width*11,ypos,White);
+                 Write_Character_Space(xpos+ Letter_Font_Width*12,ypos,White);
+                 Write_Character_Space(xpos+ Letter_Font_Width*13,ypos,White);
+                 Write_Character_Space(xpos+ Letter_Font_Width*14,ypos,White);
+                 Write_Character_Space(xpos+ Letter_Font_Width*15,ypos,White);
+                 Write_Character_Space(xpos+ Letter_Font_Width*16,ypos,White);
                  break;
     }
 }
-
 
 sbit Soft_I2C_Scl           at RA2_bit;
 sbit Soft_I2C_Sda           at RA3_bit;
@@ -2910,7 +3140,6 @@ void Set_Bus_Speeds(){
     SYSKEY = 0x00;
 }
 
-
 unsigned char RadioBufferHighByte[16];
 unsigned char RadioBufferLowByte[16];
 
@@ -2953,7 +3182,6 @@ void Read_Registers(){
         Soft_I2C_Stop();
 }
 
-
 void Stop_Tune(unsigned char ChannelSet){
 
         Soft_I2C_Start();
@@ -2965,9 +3193,7 @@ void Stop_Tune(unsigned char ChannelSet){
         Soft_I2C_Write(0x00);
         Soft_I2C_Write(ChannelSet);     //REG 3  channel     0.1 * 145 + 875 = 102
         Soft_I2C_Stop();
-
 }
-
 
 void Seek(unsigned char DataHigh){
 
@@ -2978,7 +3204,6 @@ void Seek(unsigned char DataHigh){
         Soft_I2C_Write(0x01);     //REG 2
         Soft_I2C_Stop();
 }
-
 
 void Tune(unsigned char ChannelSet){
 
@@ -3027,7 +3252,7 @@ void main(){
       unsigned char showonce6 = 0;
       unsigned char showonce7 = 0;
 
-      unsigned char Channelset = 18;    //18 = BBC R2 /// 62 = Radio 4///114 = Radio 1////136 = Classic FM////145 = Greatest Hits Radio FM///154 = Hallam FM   80  115  117  124////176 = Capital Radio////187 = Heart//////////////////////////////////////////////////
+      unsigned char Channelset = 154;    //18 = BBC R2 /// 62 = Radio 4///114 = Radio 1////136 = Classic FM////145 = Greatest Hits Radio FM///154 = Hallam FM   80  115  117  124////176 = Capital Radio////187 = Heart//////////////////////////////////////////////////
       unsigned int  Frequency;
       unsigned char Counter = 0;
       unsigned char i = 0;
@@ -3070,12 +3295,6 @@ void main(){
       unsigned char TestCharacter3[64];
       unsigned char TestCharacter4[64];
       unsigned char xx = 0;
-      /*unsigned char TestCharacter3;
-      unsigned char TestCharacter4;
-      unsigned char TestCharacter5;
-      unsigned char TestCharacter6;
-      unsigned char TestCharacter7;
-      unsigned char TestCharacter8;*/
       unsigned char Day = 0;
       unsigned char Hour1;
       unsigned char Hour2;
@@ -3149,12 +3368,10 @@ void main(){
 
       TFT_Set_Font(Tahoma25x27,CL_WHITE,FO_HORIZONTAL);
 
-
-
   while(1){
 
      //   Seconds++;
-        Delay_ms(60);
+        Delay_ms(40);
         Read_Registers();
 
          
@@ -3405,12 +3622,7 @@ void main(){
         if(PTYNotSet == 0 && PTYonce){
           PTYonce = 0;
           Display_PTY(PTY[4]); }
-       }
-       
-       if(PTY[4] ==20 || PTY[4]== 13 || PTY[4]==14){
-          Counter = 1;  //Religion CHANGE STATION IMMEDIATELY !
-       }
-
+          
         Display_Character(TestCharacter1[0],xpos,ypos,Yellow);
         Display_Character(TestCharacter2[0],xpos+Letter_Font_Width,ypos,4);
         Display_Character(TestCharacter3[0],xpos+Letter_Font_Width*2,ypos,4);
@@ -3443,23 +3655,25 @@ void main(){
         Display_Character(TestCharacter2[7],xpos+Letter_Font_Width*29,ypos,4);
         Display_Character(TestCharacter3[7],xpos+Letter_Font_Width*30,ypos,4);
         Display_Character(TestCharacter4[7],xpos+Letter_Font_Width*31,ypos,4);
-
-        
-        if(Character1NotSet ==0){
-        Display_Character(Character1[4],PTYxpos,PTYypos,White); }
-        Display_Character(Character2[4],PTYxpos + Letter_Font_Width,PTYypos,White);
-        if(Character3NotSet ==0){
-        Display_Character(Character3[4],PTYxpos + Letter_Font_Width*2,PTYypos,White);
-        Display_Character(Character4[4],PTYxpos + Letter_Font_Width*3,PTYypos,White); }
-        if(Character5NotSet ==0){
-        Display_Character(Character5[4],PTYxpos + Letter_Font_Width*4,PTYypos,White);
-        Display_Character(Character6[4],PTYxpos + Letter_Font_Width*5,PTYypos,White); }
-        if(Character7NotSet ==0){
-        Display_Character(Character7[4],PTYxpos + Letter_Font_Width*6,PTYypos,White);
-        Display_Character(Character8[4],PTYxpos + Letter_Font_Width*7,PTYypos,White); }
-
+       }
        
-       //Write_Number(Seconds,700,390,White);
+       if(PTY[4] ==20 || PTY[4]== 13 || PTY[4]==14){
+          Counter = 1;  //Religion CHANGE STATION IMMEDIATELY !
+       }
+        
+      if(Character1NotSet ==0){
+      Display_Character(Character1[4],PTYxpos,PTYypos,White); }
+      Display_Character(Character2[4],PTYxpos + Letter_Font_Width,PTYypos,White);
+      if(Character3NotSet ==0){
+      Display_Character(Character3[4],PTYxpos + Letter_Font_Width*2,PTYypos,White);
+      Display_Character(Character4[4],PTYxpos + Letter_Font_Width*3,PTYypos,White); }
+      if(Character5NotSet ==0){
+      Display_Character(Character5[4],PTYxpos + Letter_Font_Width*4,PTYypos,White);
+      Display_Character(Character6[4],PTYxpos + Letter_Font_Width*5,PTYypos,White); }
+      if(Character7NotSet ==0){
+      Display_Character(Character7[4],PTYxpos + Letter_Font_Width*6,PTYypos,White);
+      Display_Character(Character8[4],PTYxpos + Letter_Font_Width*7,PTYypos,White); }
+       
+      //Write_Number(Seconds,700,390,White);
 }
-
 }
